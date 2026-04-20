@@ -55,7 +55,7 @@ Após baixar o Github desktop: <br>
 
 2. **Clone o repositório:**
    ```bash
-   git clone [...](...)
+   git clone [https://github.com/wqiluc/Swagger_e_Node.js](https://github.com/wqiluc/Swagger_e_Node.js)
 
 4. **Abra sua IDE de escolha:** <br> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" width="32" height="32" alt="IntelliJ"/><img src="https://resources.jetbrains.com/storage/products/goland/img/meta/goland_logo_300x300.png" width="32" height="32" alt="GoLand"/><img src="https://resources.jetbrains.com/storage/products/webstorm/img/meta/webstorm_logo_300x300.png" width="32" height="32" alt="WebStorm"/> <img src="https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png" width="32" height="32" alt="PyCharm"/><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg" width="32" height="32" alt="Android Studio"/>
 5. **Siga os seguintes comandos:** <br>
