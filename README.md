@@ -27,6 +27,16 @@
 </a>
 </p>
 
+<h2 align="center"> 🏛️ Arquitetura do Repositório: <br>
+<img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white" /></h2>
+
+<p align="center">
+<pre>
+
+</pre>
+</p>
+
+
 <h2 align="center"> 💻⛏️ Ferramentas e Tecnologias Utilizadas: </h2>
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/> <br> 
@@ -65,19 +75,19 @@ Após baixar o Github desktop: <br>
 
 ```bash
 # Sobe todos os containers definidos no docker-compose.yml em background
-docker compose up -d
+docker-compose up -d
 
 # Para e remove os containers (útil quando algo trava)
-docker compose down
+docker-compose down
 
 # Mostra os logs do container (essencial para debugar erros na inicialização)
-docker compose logs -f
+docker-compose logs -f
 
 # Lista os containers que estão rodando no momento
-docker compose ps
+docker-compose ps
 
 # Remove containers parados e redes não usadas (limpeza geral)
-docker system prune -f
+docker-system prune -f
 ```
 
 <h3 align="center"><b>2. Prisma</b><br>
@@ -87,17 +97,17 @@ docker system prune -f
 # A estrutura é: docker compose exec <nome_do_serviço> <comando>
 
 # Inicializa o Prisma no projeto (cria a pasta /prisma e o schema.prisma)
-docker compose exec api npx prisma init
+docker-compose exec api npx prisma init
 
 # Cria uma nova migração (salva o estado do seu modelo no banco)
-docker compose exec api npx prisma migrate dev --name init
+docker-compose exec api npx prisma migrate dev --name init
 
 # Abre a interface gráfica do Prisma (Studio) no navegador
 # (Nota: o --port 5555 precisa estar exposto no seu docker-compose)
-docker compose exec api npx prisma studio
+docker-compose exec api npx prisma studio
 
 # Atualiza os tipos do Prisma Client (execute sempre após mudar o schema.prisma)
-docker compose exec api npx prisma generate
+docker-compose exec api npx prisma generate
 ```
 
 <h3 align="center"><b>3. NestJS / NPM (Desenvolvimento)</b><br>
@@ -116,7 +126,6 @@ npm run lint
 # Formata o código automaticamente seguindo as regras do Prettier
 npm run format
 ```
-
 
 <h3 align="center"><b>4. GitIgnore (Controle de Versão)</b><br>
 <img src="https://img.shields.io/badge/-Git-111827?style=flat-square&logo=git&logoColor=F05032"/></h3>
@@ -162,9 +171,7 @@ coverage/
 .tmp/
 ```
 
-
 <h2 align="center"> 🔑 Versões Necessárias para compilar: </h2>
-<p align="center">
 <p align="center">
   <img src="https://img.shields.io/badge/NestJS-11.0.0-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS"/>
   <img src="https://img.shields.io/badge/TypeScript-5.7.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
@@ -178,14 +185,11 @@ coverage/
   <img src="https://img.shields.io/badge/ESLint-9.0.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint"/>
   <img src="https://img.shields.io/badge/Docker-Engine-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
 </p>
-</p>
-
 
 <h2 align="center">🧭 Guia de Dependências: NestJS & Docker <br>
 <img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/><img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/><img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/></h2>
 
 Este guia detalha como adicionar, remover e gerenciar bibliotecas no seu projeto, garantindo compatibilidade entre seu ambiente local e o container Docker.
-
 
 ## 1. Instalação Inicial
 Ao clonar o projeto pela primeira vez, instale todas as dependências definidas no `package.json`:
@@ -245,10 +249,10 @@ Versionamento: Sempre realize o commit do arquivo package-lock.json. Ele garante
 
 Limpeza (se houver erros): 
 ```bash
-1. docker compose down
+1. docker-compose down
 2. rm -rf node_modules package-lock.json
 3. npm install
-4. docker compose up -d
+4. docker-compose up -d
 ```
 
 Reinicialização: Se a nova biblioteca não for reconhecida, basta reiniciar o container:
