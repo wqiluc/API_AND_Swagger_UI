@@ -27,51 +27,71 @@
 </a>
 </p>
 
-<h2 align="center"> 🏛️ Arquitetura do Repositório: <br>
-<img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white" /></h2>
-
-<pre>
-API_AND_Swagger_UI/
-├── BACKEND <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Node.js-111827?style=flat&logo=nodedotjs&logoColor=339933" height="18"/>/
-│   ├── prisma <img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=white" height="18"/>/
-│   ├── src <img src="https://img.shields.io/badge/<>src-green?style=flat&logo=image&logoColor=white" height="18"/>/
-│   │   ├── auth/
-│   │   ├── users/
-│   │   └── main.ts
-│   ├── package.json <img src="https://img.shields.io/badge/-NPM-111827?style=flat&logo=npm&logoColor=CB3837" height="18"/>
-│   └── prisma.config.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=white" height="18"/>
-├── img <img src="https://img.shields.io/badge/Assets-green?style=flat&logo=image&logoColor=white" height="18"/>/
-├── docker-compose.yml <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
-├── Dockerfile <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
-├── .Dockerignore <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
-├── openapi.yml <img src="https://img.shields.io/badge/-Swagger-111827?style=flat&logo=swagger&logoColor=85EA2D" height="18"/>
-├── .prettierrc <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" />
-├── .eslintrc <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3" />
-├── .gitignore <img src="https://img.shields.io/badge/-Gitignore-111827?style=flat&logo=git&logoColor=F05032" height="18"/>
-├── License <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=flat&logo=opensource&logoColor=white" height="18"/>
-└── README.md <img src="https://img.shields.io/badge/-Markdown-111827?style=flat&logo=markdown&logoColor=white" height="18"/>
-</pre>
-
-
 <h2 align="center"> 💻⛏️ Ferramentas e Tecnologias Utilizadas: </h2>
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/> <br>
   <img src="https://img.shields.io/badge/-JavaScript-111827?style=flat-square&logo=javascript&logoColor=F7DF1E"/>
   <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat-square&logo=typescript&logoColor=3178C6"/>
   <img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/>
   <img src="https://img.shields.io/badge/-Node.js-111827?style=flat-square&logo=nodedotjs&logoColor=339933"/>
   <img src="https://img.shields.io/badge/-Node%20Modules-111827?style=flat-square&logo=nodedotjs&logoColor=339933"/>
   <img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/>
-  <img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=white"/> <br>
+  <img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/> <br>
   <img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
   <img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/>
   <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3" />
-  <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" /> <br>
+  <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" />
+  <img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white"/> <br>
   <img src="https://img.shields.io/badge/-Git-111827?style=flat-square&logo=git&logoColor=F05032"/>
   <img src="https://img.shields.io/badge/-GitHub-111827?style=flat-square&logo=github&logoColor=white"/>
   <img src="https://img.shields.io/badge/-GitHubDesktop-111827?style=flat-square&logo=github&logoColor=purple"/>
 </p>
+
+<h2 align="center"> 🏛️ Arquitetura do Repositório: <br>
+<img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white"/></h2>
+
+<pre>
+API_AND_Swagger_UI/
+├── BACKEND <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Node.js-111827?style=flat&logo=nodedotjs&logoColor=339933" height="18"/>/
+│   ├── prisma <img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=green" height="18"/>/
+│   │   ├── prisma.config.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   ├── prisma.module.ts <img src="https://img.shields.io/badge/-module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
+│   │   ├── prisma.service.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   └── schema.prisma <img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=green" height="18"/>
+│   ├── src <img src="https://img.shields.io/badge/<>src-green?style=flat&logo=image&logoColor=white" height="18"/>/
+│   │   ├── auth <img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/>/
+│   │   │   ├── dto <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>/
+│   │   │   │   ├── login.dto.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   │   │   └── login_update.dto.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   │   └── ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>/
+│   │   │       ├── auth.controller.ts <img src="https://img.shields.io/badge/-controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/>
+│   │   │       ├── auth.service.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   │       ├── auth.module.ts <img src="https://img.shields.io/badge/-module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
+│   │   │       └── jwt.strategy.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   ├── users <img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/>/
+│   │   │   ├── dto <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>/
+│   │   │   │   ├── user.dto.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   │   │   └── user_update.dto.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   │   └── ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>/
+│   │   │       ├── users.controller.ts <img src="https://img.shields.io/badge/-controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/>
+│   │   │       ├── users.service.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   │       └── users.module.ts <img src="https://img.shields.io/badge/-module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
+│   │   └── main.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   ├── .eslintrc.ts <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3" height="18"/>
+│   ├── .prettierrc <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" height="18"/>
+│   ├── docker-compose.yml <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
+│   ├── dockerfile <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
+│   ├── openapi.yml <img src="https://img.shields.io/badge/-Swagger-111827?style=flat&logo=swagger&logoColor=85EA2D" height="18"/>
+│   ├── app.controller.ts <img src="https://img.shields.io/badge/-controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/>
+│   ├── app.module.ts <img src="https://img.shields.io/badge/-module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
+│   └── tsconfig.json <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+├── .dockerignore <img src="https://img.shields.io/badge/-DockerIgnore-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
+├── .gitignore <img src="https://img.shields.io/badge/-GitIgnore-111827?style=flat&logo=git&logoColor=F05032" height="18"/>
+├── img <img src="https://img.shields.io/badge/Assets-green?style=flat&logo=image&logoColor=white" height="18"/>/
+├── License <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=flat&logo=opensource&logoColor=white" height="18"/>
+└── README.md <img src="https://img.shields.io/badge/-Markdown-111827?style=flat&logo=markdown&logoColor=white" height="18"/>
+</pre>
 
 <h2 align="center">Comandos 🕹️ <br>
 <img src="https://img.shields.io/badge/Terminal_Integrado-000000?style=for-the-badge&logo=gnumetalinux&logoColor=white" height="18"></h2>
@@ -81,7 +101,7 @@ Após baixar o Github desktop: <br>
 
 2. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/wqiluc/Swagger_e_Node.js](https://github.com/wqiluc/Swagger_e_Node.js)
+   git clone [https://github.com/wqiluc/API_AND_Swagger_UI](https://github.com/wqiluc/API_AND_Swagger_UI)
 
 4. **Abra sua IDE de escolha:** <br> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" width="32" height="32" alt="IntelliJ"/><img src="https://resources.jetbrains.com/storage/products/goland/img/meta/goland_logo_300x300.png" width="32" height="32" alt="GoLand"/><img src="https://resources.jetbrains.com/storage/products/webstorm/img/meta/webstorm_logo_300x300.png" width="32" height="32" alt="WebStorm"/> <img src="https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png" width="32" height="32" alt="PyCharm"/><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg" width="32" height="32" alt="Android Studio"/>
 5. **Siga os seguintes comandos:** <br>
@@ -276,3 +296,48 @@ Reinicialização: Se a nova biblioteca não for reconhecida, basta reiniciar o 
 ```Bash
 docker compose restart api
 ```
+
+<br>
+
+> [!NOTE]
+> <h2 align="center">🐳 Docker & Dependências NPM <br><img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/> <img src="https://img.shields.io/badge/Docker_Desktop-3db1ff?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Desktop" height="20"/> <img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/></h2>
+
+> ### Antes de rodar o projeto, instale todas as dependências dentro da pasta `BACKEND/`:
+>
+> ```bash
+> # Dependências de produção
+> npm install @nestjs/common @nestjs/core @nestjs/platform-express
+> npm install @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types
+> npm install passport passport-jwt
+> npm install @prisma/client
+> npm install bcrypt
+> npm install class-validator class-transformer
+> npm install reflect-metadata rxjs swagger-ui-express
+> npm install dotenv
+
+> # Dependências de desenvolvimento
+> npm install -D prisma
+> npm install -D @types/passport-jwt @types/bcrypt @types/node
+> npm install -D @nestjs/cli @nestjs/schematics
+> npm install -D typescript
+> ```
+
+> ### Ou tudo de uma vez:
+> ```bash
+> npm install @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types passport passport-jwt @prisma/client bcrypt class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
+>
+> npm install -D prisma @types/passport-jwt @types/bcrypt @types/node @nestjs/cli @nestjs/schematics typescript
+> ```
+
+> ### Via Docker (recomendado):
+> ```bash
+> docker compose exec api npm install @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types passport passport-jwt @prisma/client bcrypt class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
+>
+> docker compose exec api npm install -D prisma @types/passport-jwt @types/bcrypt @types/node @nestjs/cli @nestjs/schematics typescript
+> ```
+
+> ### ⚠️ Após instalar o Prisma, rode:
+> ```bash
+> npx prisma generate
+> npx prisma migrate dev --name init
+> ```
