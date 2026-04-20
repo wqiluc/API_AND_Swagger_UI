@@ -22,6 +22,8 @@ npm-debug.log*
 .env
 .env.local
 .env.test
+.env
+.env.*
 
 # --- Versionamento ---
 # A pasta .git é pesada e desnecessária para rodar a aplicação
