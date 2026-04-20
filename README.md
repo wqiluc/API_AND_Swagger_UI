@@ -30,8 +30,6 @@
 <h2 align="center"> 🏛️ Arquitetura do Repositório: <br>
 <img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white" /></h2>
 
-<h2 align="center"> 🏛️ Arquitetura do Repositório </h2>
-
 <pre>
 API_AND_Swagger_UI/
 ├── BACKEND <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Node.js-111827?style=flat&logo=nodedotjs&logoColor=339933" height="18"/>/
