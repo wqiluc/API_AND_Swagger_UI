@@ -30,11 +30,29 @@
 <h2 align="center"> 🏛️ Arquitetura do Repositório: <br>
 <img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white" /></h2>
 
-<p align="center">
-<pre>
+<h2 align="center"> 🏛️ Arquitetura do Repositório </h2>
 
+<pre>
+API_AND_Swagger_UI/
+├── BACKEND <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Node.js-111827?style=flat&logo=nodedotjs&logoColor=339933" height="18"/>/
+│   ├── prisma <img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=white" height="18"/>/
+│   ├── src <img src="https://img.shields.io/badge/<>src-green?style=flat&logo=image&logoColor=white" height="18"/>/
+│   │   ├── auth/
+│   │   ├── users/
+│   │   └── main.ts
+│   ├── package.json <img src="https://img.shields.io/badge/-NPM-111827?style=flat&logo=npm&logoColor=CB3837" height="18"/>
+│   └── prisma.config.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=white" height="18"/>
+├── img <img src="https://img.shields.io/badge/Assets-green?style=flat&logo=image&logoColor=white" height="18"/>/
+├── docker-compose.yml <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
+├── Dockerfile <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
+├── .Dockerignore <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
+├── openapi.yml <img src="https://img.shields.io/badge/-Swagger-111827?style=flat&logo=swagger&logoColor=85EA2D" height="18"/>
+├── .prettierrc <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" />
+├── .eslintrc <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3" />
+├── .gitignore <img src="https://img.shields.io/badge/-Gitignore-111827?style=flat&logo=git&logoColor=F05032" height="18"/>
+├── License <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=flat&logo=opensource&logoColor=white" height="18"/>
+└── README.md <img src="https://img.shields.io/badge/-Markdown-111827?style=flat&logo=markdown&logoColor=white" height="18"/>
 </pre>
-</p>
 
 
 <h2 align="center"> 💻⛏️ Ferramentas e Tecnologias Utilizadas: </h2>
