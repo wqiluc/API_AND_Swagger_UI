@@ -1,0 +1,36 @@
+# --- Dependências ---
+# Não copiamos a node_modules local, pois queremos instalar as dependências
+# de forma limpa dentro do container (baseado no SO do container)
+node_modules/
+
+# --- Artefatos de Build ---
+# Pastas de saída de compilação. Não precisamos delas no build,
+# pois o código fonte será compilado dentro do container.
+dist/
+build/
+out/
+
+# --- Arquivos de Logs ---
+# Logs de erro do npm ou do servidor não são úteis no ambiente do container
+*.log
+npm-debug.log*
+
+# --- Variáveis de Ambiente e Segredos ---
+# NUNCA copie seu .env para dentro da imagem.
+# Se precisar de variáveis, passe-as no momento de rodar o container
+# ou use secrets do Docker.
+.env
+.env.local
+.env.test
+
+# --- Versionamento ---
+# A pasta .git é pesada e desnecessária para rodar a aplicação
+.git/
+.gitignore
+
+# --- IDE e Arquivos de Sistema ---
+# Arquivos de configuração da sua IDE ou do sistema operacional (Mac/Windows)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

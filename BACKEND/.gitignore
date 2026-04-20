@@ -1,0 +1,13 @@
+# Dependências
+node_modules/
+dist/
+
+# Variáveis de ambiente (nunca suba suas senhas/tokens!)
+.env
+.env.local
+
+# IDEs e configurações
+.vscode/
+.idea/
+*.log
+.DS_Store
