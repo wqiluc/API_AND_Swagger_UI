@@ -300,10 +300,10 @@ docker compose restart api
 <br>
 
 > [!NOTE]
-> <h2 align="center">🐳 Docker & Dependências NPM <br><img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/> <img src="https://img.shields.io/badge/Docker_Desktop-3db1ff?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Desktop" height="20"/> <img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/></h2>
+> <h2 align="center"> Docker & Dependências NPM <br><img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/> <img src="https://img.shields.io/badge/Docker_Desktop-3db1ff?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Desktop" height="20"/> <img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/></h2>
 
-> ### Antes de rodar o projeto, instale todas as dependências dentro da pasta `BACKEND/`:
->
+> ### Antes de rodar o projeto, instale todas as dependências dentro da pasta `BACKEND/`: 
+
 > ```bash
 > # Dependências de produção
 > npm install @nestjs/common @nestjs/core @nestjs/platform-express
@@ -316,28 +316,29 @@ docker compose restart api
 > npm install dotenv
 
 > # Dependências de desenvolvimento
+```bash
 > npm install -D prisma
 > npm install -D @types/passport-jwt @types/bcrypt @types/node
 > npm install -D @nestjs/cli @nestjs/schematics
 > npm install -D typescript
-> ```
+```
 
 > ### Ou tudo de uma vez:
-> ```bash
-> npm install @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types passport passport-jwt @prisma/client bcrypt class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
->
-> npm install -D prisma @types/passport-jwt @types/bcrypt @types/node @nestjs/cli @nestjs/schematics typescript
-> ```
 
-> ### Via Docker (recomendado):
-> ```bash
+```bash
+> npm install @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types passport passport-jwt @prisma/client bcrypt class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
+> npm install -D prisma @types/passport-jwt @types/bcrypt @types/node @nestjs/cli @nestjs/schematics typescript
+```
+
+> ### Via Docker (recomendado): <img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
+
+```bash
 > docker compose exec api npm install @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types passport passport-jwt @prisma/client bcrypt class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
->
 > docker compose exec api npm install -D prisma @types/passport-jwt @types/bcrypt @types/node @nestjs/cli @nestjs/schematics typescript
-> ```
+```
 
 > ### ⚠️ Após instalar o Prisma, rode:
-> ```bash
+```bash
 > npx prisma generate
 > npx prisma migrate dev --name init
-> ```
+```
