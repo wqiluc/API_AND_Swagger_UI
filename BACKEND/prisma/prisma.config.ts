@@ -1,20 +1,20 @@
-//Este arquivo foi gerado pelo Prisma, 
-// e assume que você instalou o seguinte: 
-// npm install --save-dev prisma dotenv.
+import * as dotenv from "dotenv";
 
-import "dotenv/config";
+import * as path from "path";
 
 import { defineConfig } from "prisma/config";
+
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 export default defineConfig
 (
   {
-    schema: "prisma/schema.prisma",
+    schema: "schema.prisma",
     migrations: 
     {
-      path: "prisma/migrations",
+      path: "migrations",
     },
-
+    
     datasource: 
     {
       url: process.env["DATABASE_URL"],
