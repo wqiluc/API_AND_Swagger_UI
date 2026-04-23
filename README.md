@@ -399,3 +399,59 @@ docker compose restart api
 > npx prisma validate          # Valida o schema.prisma
 > npx prisma introspect        # Introspecta o banco existente
 > ```
+
+
+<h2 align="center">🔐 Criptografia com bcrypt (hash via Prisma Studio) <br>
+<img src="https://img.shields.io/badge/bcrypt-111827?style=flat-square&logo=letsencrypt&logoColor=white"/>
+<img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/>
+<img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white"/>
+<img src="https://img.shields.io/badge/Password_Hash-111827?style=flat-square&logo=letsencrypt&logoColor=purple"/>
+</h2>
+
+Camada de **criptografia de senha**. O `bcrypt` converte a senha em texto puro em um **hash irreversível** antes de salvar no banco. O salt rounds `10` define o custo computacional do hash — quanto maior, mais seguro e mais lento.
+
+**Fluxo de uso no projeto:**
+
+```ts
+import * as bcrypt from 'bcrypt';
+
+// 1. No cadastro (users.service.ts / auth.service.ts)
+//    Gera o hash com 10 rounds de salt antes de persistir via Prisma
+const SALT_ROUNDS = 10;
+const hashedPassword = await bcrypt.hash(plainTextPassword, SALT_ROUNDS);
+
+await this.prisma.user.create({
+  data: {
+    email,
+    password: hashedPassword, // ← nunca salva a senha em texto puro
+  },
+});
+
+// 2. No login (auth.service.ts)
+//    Compara a senha digitada com o hash armazenado no banco
+const isMatch = await bcrypt.compare(plainTextPassword, user.password);
+if (!isMatch) throw new UnauthorizedException('Credenciais inválidas');
+```
+
+**Para visualizar o hash gerado no Prisma Studio:** <br> 
+<img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white"/>
+```bash
+# Abre o Prisma Studio no navegador (porta 5555 por padrão)
+docker-compose exec api npx prisma studio
+```
+
+> No Prisma Studio, acesse a tabela `User` → coluna `password`. O valor armazenado será parecido com:
+> `$2b$10$Kf3Q...` — o prefixo `$2b$10$` confirma que o bcrypt foi aplicado com **10 salt rounds**.
+
+**Arquivos relevantes neste projeto:**
+`jwt.strategy.ts` `auth.service.ts` `users.service.ts`
+
+---
+
+O prefixo `$2b$10$` que aparece no Prisma Studio é decodificável assim:
+
+| Segmento🛡️ | Valor🧪 | Significado🔑 |
+|----------|-------|-------------|
+| `$2b$` | algoritmo | versão do bcrypt |
+| `$10$` | cost factor | 10 salt rounds |
+| restante | hash | 53 chars = salt + digest |
