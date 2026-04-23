@@ -55,11 +55,11 @@
 API_AND_Swagger_UI/
 ├── BACKEND <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Node.js-111827?style=flat&logo=nodedotjs&logoColor=339933" height="18"/>/
 │   ├── prisma <img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=green" height="18"/>/
-│   │   ├── prisma.config.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
-│   │   ├── prisma.module.ts <img src="https://img.shields.io/badge/-module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
-│   │   ├── prisma.service.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
-│   │   └── schema.prisma <img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=green" height="18"/>
-    ├── migrations <img src="https://img.shields.io/badge/migrations-111827?style=flat&logo=databricks&logoColor=FF3621" height="18"/>/
+│   │   ├── prisma.config.ts <img src="https://img.shields.io/badge/-Config-111827?style=flat&logo=typescript&logoColor=EAB308" height="18"/>
+│   │   ├── prisma.module.ts <img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
+│   │   ├── prisma.service.ts <img src="https://img.shields.io/badge/-Service-111827?style=flat&logo=typescript&logoColor=3B82F6" height="18"/>
+│   │   └── schema.prisma <img src="https://img.shields.io/badge/Prisma%20Build-111827?style=flat&logo=prisma&logoColor=green" height="18"/>
+|   |   └── migrations <img src="https://img.shields.io/badge/Migrations-111827?style=flat&logo=databricks&logoColor=FF3621" height="18"/>/
 │   ├── src <img src="https://img.shields.io/badge/<>src-green?style=flat&logo=image&logoColor=white" height="18"/>/
 │   │   ├── auth <img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/>/
 │   │   │   ├── dto <img src="https://img.shields.io/badge/DTO_Create-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/DTO_Update-111827?style=flat&logo=typescript&logoColor=yellow" height="18"/>/
