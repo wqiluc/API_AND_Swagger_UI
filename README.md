@@ -263,8 +263,8 @@ coverage/
 
 <b>Este guia detalha como adiciona ✅, remover ❌ e gerenciar ⚙️ bibliotecas no seu projeto, garantindo compatibilidade entre seu ambiente local e o container Docker.</b>
 
-## 1. Instalação Inicial
-Ao clonar o projeto pela primeira vez, instale todas as dependências definidas no `package.json`:
+<h2 align="center">1. Instalação Inicial</h2>
+Ao clonar o projeto pela primeira vez, instale todas as dependências definidas no `package.json`: <img src="https://img.shields.io/badge/-NPM-111827?style=flat&logo=npm&logoColor=CB3837" height="18"/>
 
 ```bash
 npm install
@@ -320,7 +320,7 @@ docker compose restart api
 > ### Antes de rodar o projeto, instale todas as dependências dentro da pasta `BACKEND/`:
 
 > ```bash
-> # Dependências de produção
+> # Dependências de produção 🔧
 > npm install @nestjs/common @nestjs/core @nestjs/platform-express
 > npm install @nestjs/config @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types
 > npm install passport passport-jwt
