@@ -408,7 +408,7 @@ docker compose restart api
 <img src="https://img.shields.io/badge/Password_Hash-111827?style=flat-square&logo=letsencrypt&logoColor=purple"/>
 </h2>
 
-Camada de **criptografia de senha**. O `bcrypt` converte a senha em texto puro em um **hash irreversível** antes de salvar no banco. O salt rounds `10` define o custo computacional do hash — quanto maior, mais seguro e mais lento.
+Camada de **criptografia de senha**. O `bcrypt` converte a senha em texto puro em um **hash irreversível** antes de salvar no banco (`Dockerizado(containers)` via `PostgreSQL`). O salt rounds `10` define o custo computacional do hash — quanto maior, mais seguro e mais lento.
 
 **Fluxo de uso no projeto:**
 
