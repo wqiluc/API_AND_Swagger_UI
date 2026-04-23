@@ -87,7 +87,8 @@ API_AND_Swagger_UI/
 │   ├── app.controller.ts <img src="https://img.shields.io/badge/-controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/>
 │   ├── app.module.ts <img src="https://img.shields.io/badge/-module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
 │   ├── package.json <img src="https://img.shields.io/badge/-NPM-111827?style=flat&logo=npm&logoColor=CB3837" height="18"/>
-│   └── tsconfig.json <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   └── tsconfig.json <img src="https://img.shields.io/badge/-TypeScript-Config-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+└── tsconfig.build.json <img src="https://img.shields.io/badge/-TypeScript-Build-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
 ├── .dockerignore <img src="https://img.shields.io/badge/-DockerIgnore-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
 ├── .gitignore <img src="https://img.shields.io/badge/-GitIgnore-111827?style=flat&logo=git&logoColor=F05032" height="18"/>
 ├── img <img src="https://img.shields.io/badge/Assets-green?style=flat&logo=image&logoColor=white" height="18"/>/
