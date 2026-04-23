@@ -1,12 +1,12 @@
 openapi: 1.0.0
 info:
-  title: API de Autenticação com Node.js, Swagger e Hash
-  description: API de estudo para gerenciamento de usuários e autenticação JWT.
-  version: 1.0.0
+  title: API de Autenticação com Node.js com foco em Typescript, Swagger e senha com Hash via bycript 
+  description: API de estudo para gerenciamento de usuários e autenticação JWT (Json Web Token).
+  version: 1.1.0
 
 servers:
   - url: http://localhost:3000
-    description: Servidor de Desenvolvimento
+    description: Servidor de Desenvolvimento (localhost yet)
 
 # Definição de Segurança (Para o cadeado do Swagger)
 components:
@@ -31,7 +31,7 @@ components:
       properties:
         nome: { type: string }
         email: { type: string/int }
-        senha: { type: int }
+        senha: { type: string/int }
 
 paths:
   /auth/register:
