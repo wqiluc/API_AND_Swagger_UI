@@ -147,11 +147,15 @@ Após baixar o Github desktop: <br>
 5. **Siga os seguintes comandos:** <br>
 
 <h3 align="center"><b>1. Docker</b><br>
-<img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/><img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/></h3>
+<img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/><img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/> <br>
+<ul>
+  <li><a align="center" href="https://docs.docker.com" target="_blank">Docker Docs</a></li>
+</ul>
+</h3>
 
 ```bash
 # Sobe todos os containers definidos no docker-compose.yml em background
-docker-compose up -d
+docker-compose up -d db
 
 # Para e remove os containers (útil quando algo trava)
 docker-compose down
@@ -167,7 +171,11 @@ docker system prune -f
 ```
 
 <h3 align="center"><b>2. Prisma</b><br>
-<img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/></h3>
+<img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/>
+<ul>
+<li><a align="center" href="https://www.prisma.io/docs" target="_blank">Prisma Docs</a></li>
+<ul>
+</h3>
 
 > ⚠️ Os comandos do Prisma devem ser rodados de dentro da pasta `BACKEND/prisma/`
 
@@ -215,7 +223,11 @@ docker-compose exec api npx prisma introspect
 ```
 
 <h3 align="center"><b>3. NestJS / NPM (Desenvolvimento)</b><br>
-<img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/><img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/></h3>
+<img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/><img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/>
+<ul>
+<li><a align="center" href="https://docs.npmjs.com" target="_blank">NPM Docs</a></li>
+</ul>
+</h3>
 
 > ⚠️ Rode de dentro da pasta raiz `API_AND_Swagger_UI/`
 
@@ -473,3 +485,82 @@ O prefixo `$2b$10$` que aparece no Prisma Studio é decodificável assim:
 | `$2b$` | algoritmo | versão do bcrypt |
 | `$10$` | cost factor | 10 salt rounds |
 | restante | hash | 53 chars = salt + digest |
+
+
+<h2 align="center">👤 Teste de Criação de Usuário <br>
+<img src="https://img.shields.io/badge/Test_User_Create-111827?style=flat&logo=typescript&logoColor=purple" height="18"/></h2>
+
+```bash
+ls
+cd BACKEND
+ls
+cd prisma
+cat test-user.ts
+cd ..
+npx tsx prisma/test-user.ts
+```
+
+```ts
+/*
+OU, acesse o arquivo em si:
+*/
+```
+
+
+```ts
+// rode via terminal, na pasta BACKEND:
+// npx tsx prisma/test-user.ts
+
+import 'dotenv/config'
+import * as bcrypt from 'bcrypt'
+import { PrismaClient } from '@prisma/client'
+import { PrismaPg } from '@prisma/adapter-pg'
+
+const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL })
+const prismanovoUsuario = new PrismaClient({ adapter })
+
+async function prismatesteUsuario1() 
+{
+  const senhaCriptografada = await bcrypt.hash('anonovo1234abcd', 10)
+
+  const user = await prismanovoUsuario.user.create({
+    data: 
+    {
+      name: 'Lucas Paguetti Pereira',
+      email: 'lucas.paguetti@cesar.school',
+      password: `${senhaCriptografada}`,
+    },
+  })
+
+  console.log(`\nUsuário 1 criado: \nNome=${user.name}, \nE-mail=${user.email}, \nSenha Criptografada: ${senhaCriptografada}`)
+}
+
+async function prismatesteUsuario2() {
+  const senhaCriptografada2 = await bcrypt.hash('testedesenhadocker', 10)
+
+  const user = await prismanovoUsuario.user.create({
+    data: {
+      name: 'Ana Clara Souza',
+      email: 'ana.clara@cesar.school',
+      password: `${senhaCriptografada2}`,
+    },
+  })
+
+  console.log(`\nUsuário 2 criado: \nNome=${user.name}, \nE-mail=${user.email}, \nSenha Criptografada: ${senhaCriptografada2}`)
+}
+
+async function main() {
+  await prismatesteUsuario1();
+  await prismatesteUsuario2();
+}
+
+main()
+  .catch(console.error)
+  .finally(() => prismanovoUsuario.$disconnect());
+```
+
+<h2 align="center">Prisma Studio na Prática <br>
+<img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white" height="18"/></h2>
+<p align="center">
+<img src="./img/prismastudio.jpeg" width="440">
+</p>
