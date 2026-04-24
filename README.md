@@ -29,7 +29,7 @@
 
 <h2 align="center"> 💻⛏️ Ferramentas e Tecnologias Utilizadas: </h2>
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/> <br>
   <img src="https://img.shields.io/badge/-JavaScript-111827?style=flat-square&logo=javascript&logoColor=F7DF1E"/>
   <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat-square&logo=typescript&logoColor=3178C6"/>
   <img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/>
@@ -41,8 +41,10 @@
   <img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/> <br>
   <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3" />
-  <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" />
+  <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" /> 
   <img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white"/> <br>
+  <img src="https://img.shields.io/badge/bcrypt-111827?style=flat-square&logo=letsencrypt&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Password_Hash-111827?style=flat-square&logo=letsencrypt&logoColor=purple"/> <br>
   <img src="https://img.shields.io/badge/-Git-111827?style=flat-square&logo=git&logoColor=F05032"/>
   <img src="https://img.shields.io/badge/-GitHub-111827?style=flat-square&logo=github&logoColor=white"/>
   <img src="https://img.shields.io/badge/-GitHubDesktop-111827?style=flat-square&logo=github&logoColor=purple"/>
@@ -59,6 +61,7 @@ API_AND_Swagger_UI/
 │   │   ├── prisma.module.ts <img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
 │   │   ├── prisma.service.ts <img src="https://img.shields.io/badge/-Service-111827?style=flat&logo=typescript&logoColor=3B82F6" height="18"/>
 │   │   └── schema.prisma <img src="https://img.shields.io/badge/Prisma%20Build-111827?style=flat&logo=prisma&logoColor=green" height="18"/>
+│   │   └── test-user.ts <img src="https://img.shields.io/badge/Test_User_Create-111827?style=flat&logo=typescript&logoColor=purple" height="18"/>
 |   |   └── migrations <img src="https://img.shields.io/badge/Migrations-111827?style=flat&logo=databricks&logoColor=FF3621" height="18"/>/
 │   ├── src <img src="https://img.shields.io/badge/<>src-green?style=flat&logo=image&logoColor=white" height="18"/>/
 │   │   ├── auth <img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/>/
@@ -385,21 +388,26 @@ docker compose restart api
 
 > ### ⚠️ Após instalar o Prisma, rode de dentro de `BACKEND/prisma/`: <br><img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/>
 
-> ```bash
-> npx prisma generate          # Gera o Prisma Client
-> npx prisma migrate dev --name init  # Cria e aplica migration em dev
-> npx prisma migrate deploy    # Aplica migrations em produção
-> npx prisma migrate reset     # Reseta o banco e reaplica tudo
-> npx prisma migrate status    # Mostra status das migrations
-> npx prisma db push           # Sincroniza o schema sem criar migration
-> npx prisma db pull           # Puxa o schema do banco existente
-> npx prisma db seed           # Roda o arquivo de seed
-> npx prisma studio            # Abre interface visual do banco
-> npx prisma format            # Formata o schema.prisma
-> npx prisma validate          # Valida o schema.prisma
-> npx prisma introspect        # Introspecta o banco existente
-> ```
+```bash
+npx prisma generate          # Gera o Prisma Client
+npx prisma migrate dev --name init  # Cria e aplica migration em dev
+npx prisma migrate deploy    # Aplica migrations em produção
+npx prisma migrate reset     # Reseta o banco e reaplica tudo
+npx prisma migrate status    # Mostra status das migrations
+npx prisma db push           # Sincroniza o schema sem criar migration
+npx prisma db pull           # Puxa o schema do banco existente
+npx prisma db seed           # Roda o arquivo de seed
+npx prisma studio            # Abre interface visual do banco
+npx prisma format            # Formata o schema.prisma
+npx prisma validate          # Valida o schema.prisma
+npx prisma introspect        # Introspecta o banco existente
 
+# ✅ NOVOS no Prisma v7
+npx prisma dev               # Inicia o servidor Prisma Postgres local
+npx prisma platform login    # Autentica na Prisma Platform
+npx prisma platform project create   # Cria projeto na Prisma Platform
+npx prisma platform env create       # Cria variáveis de ambiente na Platform
+```
 
 <h2 align="center">🔐 Criptografia com bcrypt (hash via Prisma Studio) <br>
 <img src="https://img.shields.io/badge/bcrypt-111827?style=flat-square&logo=letsencrypt&logoColor=white"/>
@@ -435,9 +443,19 @@ if (!isMatch) throw new UnauthorizedException('Credenciais inválidas');
 
 **Para visualizar o hash gerado no Prisma Studio:** <br> 
 <img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white"/>
+
 ```bash
 # Abre o Prisma Studio no navegador (porta 5555 por padrão)
 docker-compose exec api npx prisma studio
+```
+
+```bash
+#Confere a criação de usuário pra teste.
+#rode via terminal, na pasta BACKEND:
+```
+
+```bash
+npx tsx prisma/test-user.ts
 ```
 
 > No Prisma Studio, acesse a tabela `User` → coluna `password`. O valor armazenado será parecido com:

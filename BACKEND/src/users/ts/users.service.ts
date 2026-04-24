@@ -21,12 +21,16 @@ export class UsersService
 
     if (existing)
       throw new ConflictException("E-mail já cadastrado.");
-
+    
     const hashedPassword = await bcrypt.hash(dto.password, 10);
 
-    return this.prisma.user.create({
-      data: { ...dto, password: hashedPassword },
-    });
+    return this.prisma.user.create
+    (
+      {
+        data: { ...dto, password: hashedPassword },
+        select: { id: true, name: true, email: true, createdAt: true },
+      }
+    );
   }
 
   async findAll()
