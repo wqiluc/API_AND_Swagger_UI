@@ -1,54 +1,54 @@
-<h1 align="center">API - Swagger + Node.js com Typescript <br>
-<img src="./img/typescript_e_node.jpeg" alt="Logo" width="410"></h1>
-
+<h1 align="center">API - Swagger + Node.js com TypeScript<br>
+<img src="./img/typescript_e_node.jpeg" alt="Logo" width="410"/></h1>
+ 
 <h2 align="center">👨🏻‍💻 Autor deste Projeto:</h2>
-
+ 
 <p align="center">
-<strong>Lucas Paguetti Pereira</strong> 🦇 <br>
-🏫 <strong>Instituição:</strong> Cesar School 🎓🧡 <br>
-📍 Recife, Pernambuco — <strong>Brazil</strong> 🇧🇷
+  <strong>Lucas Paguetti Pereira</strong> 🦇<br>
+  🏫 <strong>Instituição:</strong> Cesar School 🎓🧡<br>
+  📍 Recife, Pernambuco — <strong>Brazil</strong> 🇧🇷
 </p>
-
 <p align="center">
-<a href="https://www.instagram.com/lucpaguetti/">
-<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=black">
-</a>
-<a href="https://github.com/wqiluc">
-<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white">
-</a>
-<a href="https://www.linkedin.com/in/lucas-paguetti-pereira-70267339b/">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
-</a> <br>
-<a href="mailto:lpp2@cesar.school">
-<img src="https://img.shields.io/badge/Contact%20Me-lpp2%40cesar.school-FFA500?style=for-the-badge&logo=gmail&logoColor=orange">
-</a> <br>
-<a href="https://discord.com/users/lucaspaguettipereira">
-<img src="https://img.shields.io/badge/Discord-lucaspaguettipereira-5865F2?style=for-the-badge&logo=discord&logoColor=blue">
-</a>
+  <a href="https://www.instagram.com/lucpaguetti/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=black"/>
+  </a>
+  <a href="https://github.com/wqiluc">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/lucas-paguetti-pereira-70267339b/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a><br>
+  <a href="mailto:lpp2@cesar.school">
+    <img src="https://img.shields.io/badge/Contact%20Me-lpp2%40cesar.school-FFA500?style=for-the-badge&logo=gmail&logoColor=orange"/>
+  </a><br>
+  <a href="https://discord.com/users/lucaspaguettipereira">
+    <img src="https://img.shields.io/badge/Discord-lucaspaguettipereira-5865F2?style=for-the-badge&logo=discord&logoColor=blue"/>
+  </a>
 </p>
-
-<h2 align="center"> 💻⛏️ Ferramentas e Tecnologias Utilizadas: </h2>
+ 
+<h2 align="center">💻⛏️ Ferramentas e Tecnologias Utilizadas:</h2>
+ 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/>
   <img src="https://img.shields.io/badge/-JavaScript-111827?style=flat-square&logo=javascript&logoColor=F7DF1E"/>
   <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat-square&logo=typescript&logoColor=3178C6"/>
   <img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/>
   <img src="https://img.shields.io/badge/-Node.js-111827?style=flat-square&logo=nodedotjs&logoColor=339933"/>
-  <img src="https://img.shields.io/badge/-Node%20Modules-111827?style=flat-square&logo=nodedotjs&logoColor=339933"/>
+  <img src="https://img.shields.io/badge/-Node_Modules-111827?style=flat-square&logo=nodedotjs&logoColor=339933"/>
   <img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/>
-  <img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/> <br>
+  <img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/><br>
   <img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
   <img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/> <br>
-  <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3" />
-  <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" /> 
-  <img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white"/> <br>
+  <img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/><br>
+  <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3"/>
+  <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E"/>
   <img src="https://img.shields.io/badge/bcrypt-111827?style=flat-square&logo=letsencrypt&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Password_Hash-111827?style=flat-square&logo=letsencrypt&logoColor=purple"/> <br>
+  <img src="https://img.shields.io/badge/Password_Hash-111827?style=flat-square&logo=letsencrypt&logoColor=purple"/><br>
   <img src="https://img.shields.io/badge/-Git-111827?style=flat-square&logo=git&logoColor=F05032"/>
   <img src="https://img.shields.io/badge/-GitHub-111827?style=flat-square&logo=github&logoColor=white"/>
   <img src="https://img.shields.io/badge/-GitHubDesktop-111827?style=flat-square&logo=github&logoColor=purple"/>
 </p>
+
 
 <h2 align="center"> 🏛️ Arquitetura do Repositório: <br>
 <img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white"/></h2>
@@ -57,7 +57,6 @@
 API_AND_Swagger_UI/
 ├── BACKEND <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Node.js-111827?style=flat&logo=nodedotjs&logoColor=339933" height="18"/>/
 │   ├── prisma <img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=green" height="18"/>/
-│   │   ├── prisma.config.ts <img src="https://img.shields.io/badge/-Config-111827?style=flat&logo=typescript&logoColor=EAB308" height="18"/>
 │   │   ├── prisma.module.ts <img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
 │   │   ├── prisma.service.ts <img src="https://img.shields.io/badge/-Service-111827?style=flat&logo=typescript&logoColor=3B82F6" height="18"/>
 │   │   └── schema.prisma <img src="https://img.shields.io/badge/Prisma%20Build-111827?style=flat&logo=prisma&logoColor=green" height="18"/>
@@ -82,14 +81,13 @@ API_AND_Swagger_UI/
 │   │   │       ├── users.service.ts <img src="https://img.shields.io/badge/-Service-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
 │   │   │       └── users.module.ts <img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
 │   │   └── main.ts <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+│   │   └── app.controller.ts <img src="https://img.shields.io/badge/-Controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/>
+│   │   └── app.module.ts <img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
 │   ├── .eslintrc.ts <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3" height="18"/>
 │   ├── .prettierrc <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" height="18"/>
 │   ├── docker-compose.yml <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
 │   ├── dockerfile <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
 │   ├── openapi.yml <img src="https://img.shields.io/badge/-Swagger-111827?style=flat&logo=swagger&logoColor=85EA2D" height="18"/>
-│   ├── app.controller.ts <img src="https://img.shields.io/badge/-Controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/>
-│   ├── app.module.ts <img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
-│   ├── package.json <img src="https://img.shields.io/badge/-NPM-111827?style=flat&logo=npm&logoColor=CB3837" height="18"/>
 |   ├── tsconfig.json <img src="https://img.shields.io/badge/TypeScript-Config-111827?style=flat&logo=typescript&logoColor=3178C6" alt="TypeScript Config" height="18"/>
 |   ├── tsconfig.build.json <img src="https://img.shields.io/badge/TypeScript-Build-111827?style=flat&logo=typescript&logoColor=3178C6" alt="TypeScript Build" height="18"/>
 ├── .dockerignore <img src="https://img.shields.io/badge/-DockerIgnore-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
@@ -101,466 +99,485 @@ API_AND_Swagger_UI/
 </pre>
 
 
-<h2 align="center"> 📂 Modularização SCM (Service, Module & Controller) <br>
-<img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Service-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/></h2>
-
-
-### ![Controller](https://img.shields.io/badge/Controller-TypeScript-yellow?style=flat-square&logo=typescript&logoColor=white) `.controller.ts`
-
+<h2 align="center">📂 Modularização SCM (Service, Module & Controller)<br>
+<img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/>
+<img src="https://img.shields.io/badge/-Service-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/>
+<img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
+<img src="https://img.shields.io/badge/-Controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/>
+</h2>
+ 
+### ![Controller](https://img.shields.io/badge/Controller-TypeScript-white?style=flat-square&logo=typescript) `.controller.ts`
+ 
 Camada de **entrada da API**. Recebe as requisições HTTP e define as rotas (`@Get`, `@Post`, `@Put`, `@Delete`). Não contém lógica de negócio — apenas delega ao Service. É aqui que os decorators do Swagger (`@ApiOperation`, `@ApiResponse`) são aplicados.
-
-**Arquivos neste projeto:**
-`auth.controller.ts` `users.controller.ts` `app.controller.ts`
-
+ 
+**Arquivos neste projeto:** `auth.controller.ts` `users.controller.ts` `app.controller.ts`
+ 
 ---
-
-### ![Service](https://img.shields.io/badge/Service-TypeScript-blue?style=flat-square&logo=typescript&logoColor=white) `.service.ts`
-
+ 
+### ![Service](https://img.shields.io/badge/Service-TypeScript-white?style=flat-square&logo=typescript) `.service.ts`
+ 
 Camada de **lógica de negócio**. Processa os dados recebidos do Controller, aplica as regras da aplicação (validações, hash de senha com `bcrypt`, geração de JWT) e comunica com o banco via Prisma. Injetado no Controller via `@Injectable()`.
-
-**Arquivos neste projeto:**
-`auth.service.ts` `users.service.ts` `prisma.service.ts`
-
+ 
+**Arquivos neste projeto:** `auth.service.ts` `users.service.ts` `prisma.service.ts`
+ 
 ---
-
-### ![Module](https://img.shields.io/badge/Module-TypeScript-red?style=flat-square&logo=typescript&logoColor=white) `.module.ts`
-
+ 
+### ![Module](https://img.shields.io/badge/Module-TypeScript-white?style=flat-square&logo=typescript) `.module.ts`
+ 
 **Unidade de organização** do NestJS. Agrupa e registra o Controller e o Service de um domínio (`imports`, `providers`, `controllers`, `exports`). Permite que outros módulos reutilizem os providers via `exports`. O `AppModule` é o módulo raiz que importa todos os demais.
-
-**Arquivos neste projeto:**
-`auth.module.ts` `users.module.ts` `prisma.module.ts` `app.module.ts`
-
-
-<h2 align="center">Comandos 🕹️ <br>
-<img src="https://img.shields.io/badge/Terminal_Integrado-000000?style=for-the-badge&logo=gnumetalinux&logoColor=white" height="18"></h2>
-
-Após baixar o Github desktop: <br>
-<img src="https://img.shields.io/badge/-GitHub%20Desktop-111827?style=flat-square&logo=github&logoColor=6F42C1" height="22"/>
-
-2. **Clone o repositório:**
-```bash
-   git clone https://github.com/wqiluc/API_AND_Swagger_UI
-```
-
-4. **Abra sua IDE de escolha:** <br> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="32" height="32" alt="VS Code"/> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" width="32" height="32" alt="IntelliJ"/><img src="https://resources.jetbrains.com/storage/products/goland/img/meta/goland_logo_300x300.png" width="32" height="32" alt="GoLand"/><img src="https://resources.jetbrains.com/storage/products/webstorm/img/meta/webstorm_logo_300x300.png" width="32" height="32" alt="WebStorm"/> <img src="https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png" width="32" height="32" alt="PyCharm"/><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg" width="32" height="32" alt="Android Studio"/>
-
-5. **Siga os seguintes comandos:** <br>
-
-<h3 align="center"><b>1. Docker</b><br>
-<img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/><img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/> <br>
-<ul>
-  <li><a align="center" href="https://docs.docker.com" target="_blank">Docker Docs</a></li>
-</ul>
-</h3>
-
-```bash
-# Sobe todos os containers definidos no docker-compose.yml em background
-docker-compose up -d db
-
-# Para e remove os containers (útil quando algo trava)
-docker-compose down
-
-# Mostra os logs do container (essencial para debugar erros na inicialização)
-docker-compose logs -f
-
-# Lista os containers que estão rodando no momento
-docker-compose ps
-
-# Remove containers parados e redes não usadas (limpeza geral)
-docker system prune -f
-```
-
-<h3 align="center"><b>2. Prisma</b><br>
-<img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/>
-<ul>
-<li><a align="center" href="https://www.prisma.io/docs" target="_blank">Prisma Docs</a></li>
-<ul>
-</h3>
-
-> ⚠️ Os comandos do Prisma devem ser rodados de dentro da pasta `BACKEND/prisma/`
-
-```bash
-# A estrutura é: docker compose exec  
-
-# Inicializa o Prisma no projeto (cria a pasta /prisma e o schema.prisma)
-docker-compose exec api npx prisma init
-
-# Gera o Prisma Client (execute sempre após mudar o schema.prisma)
-docker-compose exec api npx prisma generate
-
-# Cria e aplica uma nova migração
-docker-compose exec api npx prisma migrate dev --name init
-
-# Aplica migrations em produção
-docker-compose exec api npx prisma migrate deploy
-
-# Reseta o banco e reaplica tudo
-docker-compose exec api npx prisma migrate reset
-
-# Mostra o status das migrations
-docker-compose exec api npx prisma migrate status
-
-# Sincroniza o schema sem criar migration (bom para prototipagem)
-docker-compose exec api npx prisma db push
-
-# Puxa o schema do banco existente
-docker-compose exec api npx prisma db pull
-
-# Roda o arquivo de seed
-docker-compose exec api npx prisma db seed
-
-# Abre a interface gráfica do Prisma Studio no navegador
-docker-compose exec api npx prisma studio
-
-# Formata o schema.prisma
-docker-compose exec api npx prisma format
-
-# Valida o schema.prisma
-docker-compose exec api npx prisma validate
-
-# Introspecta o banco existente
-docker-compose exec api npx prisma introspect
-```
-
-<h3 align="center"><b>3. NestJS / NPM (Desenvolvimento)</b><br>
-<img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/><img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/>
-<ul>
-<li><a align="center" href="https://docs.npmjs.com" target="_blank">NPM Docs</a></li>
-</ul>
-</h3>
-
-> ⚠️ Rode de dentro da pasta raiz `API_AND_Swagger_UI/`
-
-```bash
-# Inicia o servidor em modo de desenvolvimento (reinicia automaticamente ao salvar)
-npm run start:dev
-
-# Compila o projeto (cria a pasta /dist para produção)
-npm run build
-
-# Verifica erros de digitação e formatação (linting)
-npm run lint
-
-# Formata o código automaticamente seguindo as regras do Prettier
-npm run format
-```
-
-<h3 align="center"><b>4. GitIgnore (Controle de Versão)</b><br>
-<img src="https://img.shields.io/badge/-Git-111827?style=flat-square&logo=git&logoColor=F05032"/></h3>
-
-```bash
-# --- Dependências ---
-node_modules/
-jspm_packages/
-
-# --- Artefatos de Build ---
-dist/
-build/
-out/
-
-# --- Logs ---
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# --- Variáveis de Ambiente (CRUCIAL) ---
-# NUNCA envie seus arquivos .env para o GitHub!
-# Seus tokens, senhas de banco de dados e chaves ficam aqui.
-.env
-.env.local
-.env.*.local
-
-# --- IDEs e Configurações de Sistema ---
-.vscode/
-.idea/
-*.sublime-*
-.DS_Store
-Thumbs.db
-
-# --- Testes e Cobertura ---
-coverage/
-.nyc_output/
-
-# --- Outros ---
-.eslintcache
-.tmp/
-```
-
-<h2 align="center"> 🔑 Versões Necessárias para compilar: </h2>
+ 
+**Arquivos neste projeto:** `auth.module.ts` `users.module.ts` `prisma.module.ts` `app.module.ts`
+ 
+---
+ 
+<h2 align="center">🔑 Versões Necessárias para Compilar:</h2>
+ 
 <p align="center">
-  <img src="https://img.shields.io/badge/NestJS-11.0.0-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS"/>
-  <img src="https://img.shields.io/badge/TypeScript-5.7.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/Node.js-22.0.0-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node"/>
-  <img src="https://img.shields.io/badge/Swagger-11.3.0-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" alt="Swagger"/>
-  <img src="https://img.shields.io/badge/Passport-0.7.0-34495E?style=for-the-badge&logo=passport&logoColor=white" alt="Passport"/>
-  <img src="https://img.shields.io/badge/JWT-11.0.2-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT"/>
-  <img src="https://img.shields.io/badge/RxJS-7.8.1-B7178C?style=for-the-badge&logo=reactivex&logoColor=white" alt="RxJS"/>
-  <img src="https://img.shields.io/badge/Express-5.0.0-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
-  <img src="https://img.shields.io/badge/Prettier-3.4.2-F7B93E?style=for-the-badge&logo=prettier&logoColor=black" alt="Prettier"/>
-  <img src="https://img.shields.io/badge/ESLint-9.0.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint"/>
-  <img src="https://img.shields.io/badge/Docker-Engine-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Prisma-7.7.0-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma"/>
+  <img src="https://img.shields.io/badge/NestJS-11.0.0-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-5.7.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Node.js-22.0.0-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Swagger-11.3.0-85EA2D?style=for-the-badge&logo=swagger&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Passport-0.7.0-34495E?style=for-the-badge&logo=passport&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JWT-11.0.2-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
+  <img src="https://img.shields.io/badge/RxJS-7.8.1-B7178C?style=for-the-badge&logo=reactivex&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express-5.0.0-000000?style=for-the-badge&logo=express&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prettier-3.4.2-F7B93E?style=for-the-badge&logo=prettier&logoColor=black"/>
+  <img src="https://img.shields.io/badge/ESLint-9.0.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-Engine-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prisma-6.3.1-2D3748?style=for-the-badge&logo=prisma&logoColor=white"/>
 </p>
 
-<h2 align="center">🧭 Guia de Dependências: NestJS & Docker <br>
-<img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/><img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/><img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/></h2>
-
-<b>Este guia detalha como adiciona ✅, remover ❌ e gerenciar ⚙️ bibliotecas no seu projeto, garantindo compatibilidade entre seu ambiente local e o container Docker.</b>
-
-<h2 align="center">1. Instalação Inicial</h2>
-Ao clonar o projeto pela primeira vez, instale todas as dependências definidas no `package.json`: <img src="https://img.shields.io/badge/-NPM-111827?style=flat&logo=npm&logoColor=CB3837" height="18"/>
-
+ 
+<h2 align="center">🕹️ Comandos</h2>
+ 
+Clone o repositório via GitHub Desktop ou terminal:
+ 
 ```bash
+git clone https://github.com/wqiluc/API_AND_Swagger_UI
+```
+ 
+---
+ 
+<h2 align="center">1. Docker<br>
+<img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
+<img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/>
+</h2>
+ 
+> 📖 [Docker Docs](https://docs.docker.com)
+ 
+```bash
+# Constrói (ou reconstrói) as imagens definidas no docker-compose.yml
+docker-compose build
+ 
+# Reconstrói sem usar cache (forçar rebuild completo)
+docker-compose build --no-cache
+ 
+# Sobe todos os containers em background
+docker-compose up -d
+ 
+# Sobe apenas o container do banco de dados
+docker-compose up -d db
+ 
+# Sobe e reconstrói as imagens antes de iniciar
+docker-compose up -d --build
+ 
+# Para os containers sem removê-los
+docker-compose stop
+ 
+# Para e remove os containers (útil quando algo trava)
+docker-compose down
+ 
+# Para, remove containers E volumes (reseta o banco de dados)
+docker-compose down -v
+ 
+# Reinicia um container específico
+docker compose restart api
+ 
+# Mostra os logs em tempo real
+docker-compose logs -f
+ 
+# Mostra os logs de um serviço específico
+docker-compose logs -f api
+ 
+# Lista os containers em execução
+docker-compose ps
+ 
+# Lista todos os containers (incluindo parados)
+docker-compose ps -a
+ 
+# Executa um comando dentro de um container em execução
+docker-compose exec api bash
+ 
+# Remove containers parados, redes e imagens não usadas
+docker system prune -f
+ 
+# Remove também os volumes não usados (limpeza total)
+docker system prune -f --volumes
+```
+ 
+---
+ 
+<h2 align="center">2. Prisma<br>
+<img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/>
+</h2>
+ 
+> 📖 [Prisma Docs](https://www.prisma.io/docs)
+ 
+> ⚠️ Os comandos do Prisma devem ser rodados de dentro da pasta `BACKEND/`
+ 
+```bash
+# Inicializa o Prisma no projeto (cria /prisma e schema.prisma)
+docker-compose exec api npx prisma init
+ 
+# Gera o Prisma Client (rode sempre após alterar o schema.prisma)
+docker-compose exec api npx prisma generate
+ 
+# Cria e aplica uma nova migration em desenvolvimento
+docker-compose exec api npx prisma migrate dev --name init
+ 
+# Aplica migrations em produção
+docker-compose exec api npx prisma migrate deploy
+ 
+# Reseta o banco e reaplica todas as migrations
+docker-compose exec api npx prisma migrate reset
+ 
+# Mostra o status das migrations
+docker-compose exec api npx prisma migrate status
+ 
+# Sincroniza o schema sem criar migration (útil em prototipagem)
+docker-compose exec api npx prisma db push
+ 
+# Puxa o schema a partir de um banco existente
+docker-compose exec api npx prisma db pull
+ 
+# Roda o arquivo de seed
+docker-compose exec api npx prisma db seed
+ 
+# Abre o Prisma Studio no navegador (porta 5555)
+docker-compose exec api npx prisma studio
+ 
+# Formata o schema.prisma
+docker-compose exec api npx prisma format
+ 
+# Valida o schema.prisma
+docker-compose exec api npx prisma validate
+ 
+# Introspecta o banco existente
+docker-compose exec api npx prisma introspect
+ 
+# ✅ Novos no Prisma v7
+npx prisma dev                         # Inicia o servidor Prisma Postgres local
+npx prisma platform login              # Autentica na Prisma Platform
+npx prisma platform project create    # Cria projeto na Prisma Platform
+npx prisma platform env create        # Cria variáveis de ambiente na Platform
+```
+ 
+---
+ 
+<h2 align="center">3. NestJS / NPM<br>
+<img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/>
+<img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/>
+</h2>
+ 
+> 📖 [NPM Docs](https://docs.npmjs.com)
+ 
+> ⚠️ Rode de dentro da pasta raiz `API_AND_Swagger_UI/`
+ 
+```bash
+# Instala todas as dependências do package.json
 npm install
+ 
+# Inicia o servidor em modo de desenvolvimento (hot reload)
+npm run start:dev
+ 
+# Compila o projeto para produção (gera a pasta /dist)
+npm run build
+ 
+# Verifica erros de lint
+npm run lint
+ 
+# Formata o código automaticamente com Prettier
+npm run format
 ```
-
-## 2. Adicionando Novos Pacotes
-Sempre utilize a tag `@latest` para garantir a versão mais recente e estável.
-
-Para Produção: Bibliotecas que a aplicação precisa para rodar (ex: axios, jwt, swagger).
-```bash
-npm install @latest
-```
-
-Para Desenvolvimento: Ferramentas de suporte que não vão para produção (ex: eslint, prettier, @types/).
-```bash
-npm install @latest -D
-```
-
-> <mark>Dica</mark>: **Para evitar erros de compatibilidade, prefira rodar a instalação dentro do Docker Desktop <img src="https://img.shields.io/badge/Docker_Desktop-3db1ff?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Desktop" height="20"/>**
-
-## 3. Tabela de Gerenciamento
-
-| Ação | Comando Local | Comando via Docker (api) |
+ 
+---
+ 
+<h2 align="center">4. Gerenciamento de Dependências<br>
+<img src="https://img.shields.io/badge/-NestJS-111827?style=flat-square&logo=nestjs&logoColor=E0234E"/>
+<img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/>
+<img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
+</h2>
+ 
+| Ação | Comando Local | Comando via Docker |
 |------|--------------|--------------------------|
-| Instalar Produção | `npm install <pacote>@latest` | `docker compose exec api npm install <pacote>@latest` |
-| Instalar Dev | `npm install <pacote>@latest -D` | `docker compose exec api npm install <pacote>@latest -D` |
-| Remover Pacote | `npm uninstall <pacote>` | `docker compose exec api npm uninstall <pacote>` |
-| Atualizar Tudo | `npm update` | `docker compose exec api npm update` |
-| Listar Pacotes | `npm list --depth=0` | `docker compose exec api npm list --depth=0` |
-
-## 4. Melhores Práticas
-
-**Sincronização:** Como configuramos um volume no `docker-compose.yml`, tudo o que for instalado via Docker será espelhado automaticamente na sua pasta `node_modules` local.
-
-**Versionamento:** Sempre realize o commit do arquivo `package-lock.json`. Ele garante que todos os ambientes tenham as mesmas versões instaladas.
-
-**Limpeza (se houver erros):** 🧹
+| Instalar produção | `npm install <pacote>@latest` | `docker compose exec api npm install <pacote>@latest` |
+| Instalar dev | `npm install <pacote>@latest -D` | `docker compose exec api npm install <pacote>@latest -D` |
+| Remover pacote | `npm uninstall <pacote>` | `docker compose exec api npm uninstall <pacote>` |
+| Atualizar tudo | `npm update` | `docker compose exec api npm update` |
+| Listar pacotes | `npm list --depth=0` | `docker compose exec api npm list --depth=0` |
+ 
+> **Dica:** Prefira rodar instalações dentro do Docker para evitar incompatibilidades entre seu ambiente local e o container.
+ 
+**Limpeza em caso de erros:** 🧹
+ 
 ```bash
 docker-compose down
 rm -rf node_modules package-lock.json
 npm install
-docker-compose up -d
+docker-compose up -d --build
 ```
-
-**Reinicialização:** Se a nova biblioteca não for reconhecida, basta reiniciar o container:
+ 
+ 
+<h2 align="center">5. Instalação Completa das Dependências<br>
+<img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/>
+</h2>
+ 
+> ⚠️ Rode de dentro da pasta `BACKEND/`
+ 
 ```bash
-docker compose restart api
+# Dependências de produção
+npm install @nestjs/common @nestjs/core @nestjs/platform-express \
+  @nestjs/config @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types \
+  passport passport-jwt @prisma/client bcrypt \
+  class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
+ 
+# Dependências de desenvolvimento
+npm install -D prisma @types/passport-jwt @types/bcrypt @types/node \
+  @nestjs/cli @nestjs/schematics typescript ts-node
 ```
-
-> [!NOTE]
-> <h2 align="center"> Docker & Dependências NPM <br><img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/> <img src="https://img.shields.io/badge/Docker_Desktop-3db1ff?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Desktop" height="20"/> <img src="https://img.shields.io/badge/-NPM-111827?style=flat-square&logo=npm&logoColor=CB3837"/></h2>
-
-> ### Antes de rodar o projeto, instale todas as dependências dentro da pasta `BACKEND/`:
-
-> ```bash
-> # Dependências de produção 🔧
-> npm install @nestjs/common @nestjs/core @nestjs/platform-express
-> npm install @nestjs/config @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types
-> npm install passport passport-jwt
-> npm install @prisma/client
-> npm install bcrypt
-> npm install class-validator class-transformer
-> npm install reflect-metadata rxjs swagger-ui-express
-> npm install dotenv
->
-> # Dependências de desenvolvimento 🧭
-> npm install -D prisma
-> npm install -D @types/passport-jwt @types/bcrypt @types/node
-> npm install -D @nestjs/cli @nestjs/schematics
-> npm install -D typescript ts-node
-> ```
-
-> ### Ou tudo de uma vez:
-
-> ```bash
-> npm install @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/config @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types passport passport-jwt @prisma/client bcrypt class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
-> npm install -D prisma @types/passport-jwt @types/bcrypt @types/node @nestjs/cli @nestjs/schematics typescript ts-node
-> ```
-
-> ### Via Docker (recomendado): <br><img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
-
-> ```bash
-> docker compose exec api npm install @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/config @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types passport passport-jwt @prisma/client bcrypt class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
-> docker compose exec api npm install -D prisma @types/passport-jwt @types/bcrypt @types/node @nestjs/cli @nestjs/schematics typescript ts-node
-> ```
-
-
-> ### ⚠️ Após instalar o Prisma, rode de dentro de `BACKEND/prisma/`: <br><img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/>
-
+ 
+**Via Docker (recomendado):** <br>
+<img src="https://img.shields.io/badge/Docker_Desktop-2496ED?style=for-the-badge&logo=docker&logoColor=white" height="15" alt="Docker Desktop"/>
+ 
 ```bash
-npx prisma generate          # Gera o Prisma Client
-npx prisma migrate dev --name init  # Cria e aplica migration em dev
-npx prisma migrate deploy    # Aplica migrations em produção
-npx prisma migrate reset     # Reseta o banco e reaplica tudo
-npx prisma migrate status    # Mostra status das migrations
-npx prisma db push           # Sincroniza o schema sem criar migration
-npx prisma db pull           # Puxa o schema do banco existente
-npx prisma db seed           # Roda o arquivo de seed
-npx prisma studio            # Abre interface visual do banco
-npx prisma format            # Formata o schema.prisma
-npx prisma validate          # Valida o schema.prisma
-npx prisma introspect        # Introspecta o banco existente
-
-# ✅ NOVOS no Prisma v7
-npx prisma dev               # Inicia o servidor Prisma Postgres local
-npx prisma platform login    # Autentica na Prisma Platform
-npx prisma platform project create   # Cria projeto na Prisma Platform
-npx prisma platform env create       # Cria variáveis de ambiente na Platform
+docker compose exec api npm install @nestjs/common @nestjs/core @nestjs/platform-express \
+  @nestjs/config @nestjs/jwt @nestjs/passport @nestjs/swagger @nestjs/mapped-types \
+  passport passport-jwt @prisma/client bcrypt \
+  class-validator class-transformer reflect-metadata rxjs swagger-ui-express dotenv
+ 
+docker compose exec api npm install -D prisma @types/passport-jwt @types/bcrypt @types/node \
+  @nestjs/cli @nestjs/schematics typescript ts-node
 ```
+ 
+ 
+<h2 align="center">6. GitIgnore<br>
+<img src="https://img.shields.io/badge/-Git-111827?style=flat-square&logo=git&logoColor=F05032"/>
+</h2>
+ 
+```bash
+# Dependências
+node_modules/
+ 
+# Build
+dist/
+build/
+out/
+ 
+# Logs
+*.log
+npm-debug.log*
+ 
+# Variáveis de ambiente — NUNCA envie para o GitHub!
+.env
+.env.local
+.env.*.local
+ 
+# IDEs e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ 
+# Testes
+coverage/
+.nyc_output/
+ 
+# Outros
+.eslintcache
+.tmp/
+```
+ 
 
-<h2 align="center">🔐 Criptografia com bcrypt (hash via Prisma Studio) <br>
+<h2 align="center">🔐 Criptografia com bcrypt<br>
 <img src="https://img.shields.io/badge/bcrypt-111827?style=flat-square&logo=letsencrypt&logoColor=white"/>
-<img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/>
-<img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white"/>
 <img src="https://img.shields.io/badge/Password_Hash-111827?style=flat-square&logo=letsencrypt&logoColor=purple"/>
 </h2>
-
-Camada de **criptografia de senha**. O `bcrypt` converte a senha em texto puro em um **hash irreversível** antes de salvar no banco (`Dockerizado(containers)` via `PostgreSQL`). O salt rounds `10` define o custo computacional do hash — quanto maior, mais seguro e mais lento.
-
-**Fluxo de uso no projeto:**
-
+ 
+O `bcrypt` converte a senha em texto puro em um **hash irreversível** antes de salvar no banco. O salt rounds `10` define o custo computacional — quanto maior, mais seguro e mais lento.
+ 
 ```ts
 import * as bcrypt from 'bcrypt';
-
-// 1. No cadastro (users.service.ts / auth.service.ts)
-//    Gera o hash com 10 rounds de salt antes de persistir via Prisma
+ 
+// No cadastro (users.service.ts / auth.service.ts)
 const SALT_ROUNDS = 10;
 const hashedPassword = await bcrypt.hash(plainTextPassword, SALT_ROUNDS);
-
+ 
 await this.prisma.user.create({
   data: {
     email,
-    password: hashedPassword, // ← nunca salva a senha em texto puro
+    password: hashedPassword, // nunca salva a senha em texto puro
   },
 });
-
-// 2. No login (auth.service.ts)
-//    Compara a senha digitada com o hash armazenado no banco
+ 
+// No login (auth.service.ts)
 const isMatch = await bcrypt.compare(plainTextPassword, user.password);
 if (!isMatch) throw new UnauthorizedException('Credenciais inválidas');
 ```
+ 
+O prefixo `$2b$10$` armazenado no banco é decodificável assim:
+ 
+| Segmento 🛡️ | Valor 🧪 | Significado 🔑 |
+|------------|---------|--------------|
+| `$2b$` | algoritmo | versão do bcrypt |
+| `$10$` | cost factor | 10 salt rounds |
+| restante | hash | 53 chars = salt + digest |
+ 
+**Arquivos relevantes:** `jwt.strategy.ts` `auth.service.ts` `users.service.ts`
+ 
+ 
+<h2 align="center">👤 Teste de Criação de Usuário<br>
+<img src="https://img.shields.io/badge/Test_User_Create-111827?style=flat&logo=typescript&logoColor=purple" height="18"/>
+</h2>
+ 
+```bash
+cd BACKEND
+npx tsx prisma/test-user.ts
+```
+ 
+```ts
+import * as bcrypt from 'bcrypt';
+import { PrismaClient } from '@prisma/client';
 
-**Para visualizar o hash gerado no Prisma Studio:** <br> 
+const prisma = new PrismaClient();
+
+async function principal() 
+{
+  try 
+  {
+    const senha1 = await bcrypt.hash('anonovo1234abcd', 10);
+    const usuario1 = await prisma.user.upsert({
+      where: { email: 'lucas.paguetti@cesar.school' },
+      update: {},
+      create: 
+      {
+        name: 'Lucas Paguetti Pereira',
+        email: 'lucas.paguetti@cesar.school',
+        password: `${senha1}`,
+      },
+    });
+    console.log(`Usuário 1: ${usuario1.name}, \n Email: ${usuario1.email}`);
+
+    const senha2 = await bcrypt.hash('testedesenhadocker', 10);
+    const usuario2 = await prisma.user.upsert({
+      where: { email: 'ana.clara@cesar.school' },
+      update: {},
+      create: 
+      {
+        name: 'Ana Clara Souza',
+        email: 'ana.clara@cesar.school',
+        password: `${senha2}`,
+      },
+    });
+
+    console.log(`Usuário 2: ${usuario2.name}, \n Email: ${usuario2.email}`);
+  } catch (error) 
+  {
+    console.error(error);
+    
+  } finally 
+  {
+    await prisma.$disconnect();
+  }
+}
+
+principal();
+```
+ 
+<h2 align="center">Prisma Studio na Prática <br>
 <img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white"/>
-
+</h2>
+ 
 ```bash
 # Abre o Prisma Studio no navegador (porta 5555 por padrão)
 docker-compose exec api npx prisma studio
 ```
-
-```bash
-#Confere a criação de usuário pra teste.
-#rode via terminal, na pasta BACKEND:
-```
-
-```bash
-npx tsx prisma/test-user.ts
-```
-
-> No Prisma Studio, acesse a tabela `User` → coluna `password`. O valor armazenado será parecido com:
-> `$2b$10$Kf3Q...` — o prefixo `$2b$10$` confirma que o bcrypt foi aplicado com **10 salt rounds**.
-
-**Arquivos relevantes neste projeto:**
-`jwt.strategy.ts` `auth.service.ts` `users.service.ts`
-
----
-
-O prefixo `$2b$10$` que aparece no Prisma Studio é decodificável assim:
-
-| Segmento🛡️ | Valor🧪 | Significado🔑 |
-|----------|-------|-------------|
-| `$2b$` | algoritmo | versão do bcrypt |
-| `$10$` | cost factor | 10 salt rounds |
-| restante | hash | 53 chars = salt + digest |
-
-
-<h2 align="center">👤 Teste de Criação de Usuário <br>
-<img src="https://img.shields.io/badge/Test_User_Create-111827?style=flat&logo=typescript&logoColor=purple" height="18"/></h2>
-
-```bash
-ls
-cd BACKEND
-ls
-cd prisma
-cat test-user.ts
-cd ..
-npx tsx prisma/test-user.ts
-```
-
-```ts
-/*
-OU, acesse o arquivo em si:
-*/
-```
-
-
-```ts
-// rode via terminal, na pasta BACKEND:
-// npx tsx prisma/test-user.ts
-
-import 'dotenv/config'
-import * as bcrypt from 'bcrypt'
-import { PrismaClient } from '@prisma/client'
-import { PrismaPg } from '@prisma/adapter-pg'
-
-const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL })
-const prismanovoUsuario = new PrismaClient({ adapter })
-
-async function prismatesteUsuario1() 
-{
-  const senhaCriptografada = await bcrypt.hash('anonovo1234abcd', 10)
-
-  const user = await prismanovoUsuario.user.create({
-    data: 
-    {
-      name: 'Lucas Paguetti Pereira',
-      email: 'lucas.paguetti@cesar.school',
-      password: `${senhaCriptografada}`,
-    },
-  })
-
-  console.log(`\nUsuário 1 criado: \nNome=${user.name}, \nE-mail=${user.email}, \nSenha Criptografada: ${senhaCriptografada}`)
-}
-
-async function prismatesteUsuario2() {
-  const senhaCriptografada2 = await bcrypt.hash('testedesenhadocker', 10)
-
-  const user = await prismanovoUsuario.user.create({
-    data: {
-      name: 'Ana Clara Souza',
-      email: 'ana.clara@cesar.school',
-      password: `${senhaCriptografada2}`,
-    },
-  })
-
-  console.log(`\nUsuário 2 criado: \nNome=${user.name}, \nE-mail=${user.email}, \nSenha Criptografada: ${senhaCriptografada2}`)
-}
-
-async function main() {
-  await prismatesteUsuario1();
-  await prismatesteUsuario2();
-}
-
-main()
-  .catch(console.error)
-  .finally(() => prismanovoUsuario.$disconnect());
-```
-
-<h2 align="center">Prisma Studio na Prática <br>
-<img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white" height="18"/></h2>
+ 
+Acesse a tabela `User` → coluna `password`. O valor armazenado será semelhante a `$2b$10$Kf3Q...`, confirmando que o bcrypt foi aplicado corretamente com 10 salt rounds.
+ 
 <p align="center">
-<img src="./img/prismastudio.jpeg" width="440">
+  <img src="./img/PrismaStudio2.jpeg" width="440"/>
+</p>
+ 
+<h2 align="center"> Swagger UI na Prática <br>
+<img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/>
+<img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green"/>
+</h2>
+ 
+Com o servidor rodando, acesse a documentação interativa da API pelo navegador:
+ 
+```bash
+#após rodar na PASTA BACKEND/ :
+npm run start:dev
+```
+
+
+```
+http://localhost:3000/api
+```
+ 
+O Swagger é configurado em `main.ts` via `@nestjs/swagger` e documentado com decorators nos controllers (`@ApiOperation`, `@ApiResponse`, `@ApiBody`, `@ApiBearerAuth`). O arquivo `openapi.yml` na raiz do projeto contém a especificação completa da API no formato OpenAPI 3.0.
+ 
+**Endpoints documentados:**
+ 
+| Método | Rota | Descrição |
+|--------|------|-----------|
+| `@POST` |`/auth/login` | Autenticação — retorna o token JWT |
+| `@GET` | `/users` | Lista todos os usuários (requer Bearer Token) |
+| `@GET by ID` | `/users/:id` | Busca um usuário pelo ID (requer Bearer Token) |
+| `@POST` | `/users` | Cria um novo usuário |
+| `@PUT` | `/users/:id` | Atualiza um usuário (requer Bearer Token) |
+| `@DELETE` | `/users/:id` | Remove um usuário (requer Bearer Token) |
+ 
+**Como testar rotas protegidas no Swagger:**
+ 
+1. Execute `POST /auth/login` com suas credenciais
+2. Copie o `access_token` retornado na resposta
+3. Clique em **Authorize 🔒** no topo da página do Swagger
+4. Cole o token no campo `Bearer Token` e confirme
+5. Todas as rotas protegidas passarão a enviar o header `Authorization: Bearer <token>` automaticamente
+
+```ts
+import { NestFactory } from '@nestjs/core';
+
+import { AppModule } from './app.module';
+
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+
+async function SwaggerOnline() 
+{
+  const app = await NestFactory.create(AppModule);
+
+  const config = new DocumentBuilder()
+    .setTitle('API de Autenticação do TS Node.js')
+    .setDescription('Estudo de autenticação com JWT e Bcrypt no NODE.js')
+    .setVersion('1.1.0')
+    .addBearerAuth()
+    .build();
+
+  const document = SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('api', app, document);
+
+  await app.listen(process.env.PORT ?? 3000);
+}
+
+SwaggerOnline();
+```
+ 
+
+<h2 align="center"><img src="./img/SwaggerOnline.jpeg" width="440"></h2>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=for-the-badge&logo=opensource&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Made%20with-TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=blue"/>
+  <img src="https://img.shields.io/badge/Powered%20by-NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=red"/>
 </p>

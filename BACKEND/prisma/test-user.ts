@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-async function main() 
+async function principal() 
 {
   try 
   {
@@ -18,7 +18,7 @@ async function main()
         password: `${senha1}`,
       },
     });
-    console.log(`Usuário 1: ${usuario1.name}`);
+    console.log(`Usuário 1: ${usuario1.name}, \n Email: ${usuario1.email}`);
 
     const senha2 = await bcrypt.hash('testedesenhadocker', 10);
     const usuario2 = await prisma.user.upsert({
@@ -28,11 +28,11 @@ async function main()
       {
         name: 'Ana Clara Souza',
         email: 'ana.clara@cesar.school',
-        password: senha2,
+        password: `${senha2}`,
       },
     });
 
-    console.log(`Usuário 2: ${usuario2.name}`);
+    console.log(`Usuário 2: ${usuario2.name}, \n Email: ${usuario2.email}`);
   } catch (error) 
   {
     console.error(error);
@@ -43,4 +43,4 @@ async function main()
   }
 }
 
-main();
+principal();
