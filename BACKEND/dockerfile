@@ -6,10 +6,15 @@ WORKDIR /usr/src/app
 
 # Copia os arquivos de dependência e instala
 COPY package*.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 
-# Copia todo o resto do código fonte
+# !!! COPIE O CÓDIGO PRIMEIRO !!!
+# Isso coloca o prisma/schema.prisma dentro do container
 COPY . .
+
+# !!! GERE O CLIENTE DEPOIS !!!
+# Agora ele vai encontrar o arquivo schema.prisma
+RUN npx prisma generate
 
 # Expõe a porta que o NestJS usa
 EXPOSE 3000
