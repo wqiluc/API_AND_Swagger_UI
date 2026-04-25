@@ -1,49 +1,46 @@
-// rode via terminal, na pasta BACKEND:
-// npx tsx prisma/test-user.ts
+import * as bcrypt from 'bcrypt';
+import { PrismaClient } from '@prisma/client';
 
-import 'dotenv/config'
-import * as bcrypt from 'bcrypt'
-import { PrismaClient } from '@prisma/client'
-import { PrismaPg } from '@prisma/adapter-pg'
+const prisma = new PrismaClient();
 
-const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL })
-const prismanovoUsuario = new PrismaClient({ adapter })
-
-async function prismatesteUsuario1() 
+async function main() 
 {
-  const senhaCriptografada = await bcrypt.hash('anonovo1234abcd', 10)
+  try 
+  {
+    const senha1 = await bcrypt.hash('anonovo1234abcd', 10);
+    const usuario1 = await prisma.user.upsert({
+      where: { email: 'lucas.paguetti@cesar.school' },
+      update: {},
+      create: 
+      {
+        name: 'Lucas Paguetti Pereira',
+        email: 'lucas.paguetti@cesar.school',
+        password: `${senha1}`,
+      },
+    });
+    console.log(`Usuário 1: ${usuario1.name}`);
 
-  const user = await prismanovoUsuario.user.create({
-    data: 
-    {
-      name: 'Lucas Paguetti Pereira',
-      email: 'lucas.paguetti@cesar.school',
-      password: `${senhaCriptografada}`,
-    },
-  })
+    const senha2 = await bcrypt.hash('testedesenhadocker', 10);
+    const usuario2 = await prisma.user.upsert({
+      where: { email: 'ana.clara@cesar.school' },
+      update: {},
+      create: 
+      {
+        name: 'Ana Clara Souza',
+        email: 'ana.clara@cesar.school',
+        password: senha2,
+      },
+    });
 
-  console.log(`\nUsuário 1 criado: \nNome=${user.name}, \nE-mail=${user.email}, \nSenha Criptografada: ${senhaCriptografada}`)
+    console.log(`Usuário 2: ${usuario2.name}`);
+  } catch (error) 
+  {
+    console.error(error);
+    
+  } finally 
+  {
+    await prisma.$disconnect();
+  }
 }
 
-async function prismatesteUsuario2() {
-  const senhaCriptografada2 = await bcrypt.hash('testedesenhadocker', 10)
-
-  const user = await prismanovoUsuario.user.create({
-    data: {
-      name: 'Ana Clara Souza',
-      email: 'ana.clara@cesar.school',
-      password: `${senhaCriptografada2}`,
-    },
-  })
-
-  console.log(`\nUsuário 2 criado: \nNome=${user.name}, \nE-mail=${user.email}, \nSenha Criptografada: ${senhaCriptografada2}`)
-}
-
-async function main() {
-  await prismatesteUsuario1();
-  await prismatesteUsuario2();
-}
-
-main()
-  .catch(console.error)
-  .finally(() => prismanovoUsuario.$disconnect());
+main();
