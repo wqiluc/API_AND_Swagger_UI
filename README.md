@@ -128,26 +128,20 @@ Camada de **lógica de negócio**. Processa os dados recebidos do Controller, ap
  
 **Arquivos neste projeto:** `auth.module.ts` `users.module.ts` `prisma.module.ts` `app.module.ts`
  
----
- 
 <h2 align="center">🔑 Versões Necessárias para Compilar:</h2>
- 
 <p align="center">
-  <img src="https://img.shields.io/badge/NestJS-11.0.0-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TypeScript-5.7.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Node.js-22.0.0-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Swagger-11.3.0-85EA2D?style=for-the-badge&logo=swagger&logoColor=black"/>
+  <img src="https://img.shields.io/badge/NestJS-10.0.0-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-5.0.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Swagger-11.4.1-85EA2D?style=for-the-badge&logo=swagger&logoColor=black"/>
   <img src="https://img.shields.io/badge/Passport-0.7.0-34495E?style=for-the-badge&logo=passport&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JWT-11.0.2-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
-  <img src="https://img.shields.io/badge/RxJS-7.8.1-B7178C?style=for-the-badge&logo=reactivex&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Express-5.0.0-000000?style=for-the-badge&logo=express&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Prettier-3.4.2-F7B93E?style=for-the-badge&logo=prettier&logoColor=black"/>
-  <img src="https://img.shields.io/badge/ESLint-9.0.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-Engine-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JWT-10.2.0-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
+  <img src="https://img.shields.io/badge/RxJS-7.8.0-B7178C?style=for-the-badge&logo=reactivex&logoColor=white"/>
   <img src="https://img.shields.io/badge/Prisma-6.3.1-2D3748?style=for-the-badge&logo=prisma&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Prettier-3.8.3-F7B93E?style=for-the-badge&logo=prettier&logoColor=black"/>
+  <img src="https://img.shields.io/badge/ESLint-10.2.1-4B32C3?style=for-the-badge&logo=eslint&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-Engine-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
- 
 <h2 align="center">🕹️ Comandos</h2>
  
 Clone o repositório via GitHub Desktop ou terminal:
@@ -155,9 +149,8 @@ Clone o repositório via GitHub Desktop ou terminal:
 ```bash
 git clone https://github.com/wqiluc/API_AND_Swagger_UI
 ```
- 
----
- 
+
+
 <h2 align="center">1. Docker<br>
 <img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
 <img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/>
@@ -407,21 +400,38 @@ O `bcrypt` converte a senha em texto puro em um **hash irreversível** antes de 
  
 ```ts
 import * as bcrypt from 'bcrypt';
- 
-// No cadastro (users.service.ts / auth.service.ts)
-const SALT_ROUNDS = 10;
-const hashedPassword = await bcrypt.hash(plainTextPassword, SALT_ROUNDS);
- 
-await this.prisma.user.create({
-  data: {
-    email,
-    password: hashedPassword, // nunca salva a senha em texto puro
-  },
-});
- 
-// No login (auth.service.ts)
-const isMatch = await bcrypt.compare(plainTextPassword, user.password);
-if (!isMatch) throw new UnauthorizedException('Credenciais inválidas');
+
+// ─── Cadastro (users.service.ts) ───────────────────────────────────────────
+
+const senhaCriptografada = await bcrypt.hash(dto.password, 10);
+
+return this.prisma.user.create(
+  {
+    data: { ...dto, password: senhaCriptografada },
+    select: { id: true, name: true, email: true, createdAt: true },
+  }
+);
+
+// ─── Atualização de senha (users.service.ts) ───────────────────────────────
+
+if (dto.password)
+  dto.password = await bcrypt.hash(dto.password, 10);
+
+return this.prisma.user.update({ where: { id }, data: dto });
+
+// ─── Login (auth.service.ts) ───────────────────────────────────────────────
+
+const padrãoSenha = await bcrypt.compare(dto.password, user.password); // user.password já está criptografado
+
+if (!passwordMatch)
+  throw new UnauthorizedException("Credenciais de Usuário Inválidas.");
+
+const payload = { sub: user.id, email: user.email };
+
+return 
+{
+  access_token: this.jwtService.sign(payload),
+};
 ```
  
 O prefixo `$2b$10$` armazenado no banco é decodificável assim:
@@ -441,52 +451,59 @@ O prefixo `$2b$10$` armazenado no banco é decodificável assim:
  
 ```bash
 cd BACKEND
-npx tsx prisma/test-user.ts
+npx tsx --env-file=.env prisma/test-user.ts
 ```
  
 ```ts
 import * as bcrypt from 'bcrypt';
 import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient();
+const prismaCriar = new PrismaClient();
 
 async function principal() 
 {
+  const usuarios = [
+    { nome: 'Lucas Paguetti Pereira', email: 'lucas.paguetti@cesar.school', senha: 'anonovo1234abcd' },
+    { nome: 'Ana Clara Souza', email: 'ana.clara@cesar.school', senha: 'testedesenhadocker' },
+    { nome: 'Bruno Torres Leão', email: 'bruno_torres.leao@cesar.school', senha: 'senhagenericateste' },
+    { nome: 'Mariana Figueiredo Luz', email: 'mariana.figueiredo@cesar.school', senha: 'mariana@pass2024' },
+    { nome: 'Felipe Andrade Costa', email: 'felipe.andrade@cesar.school', senha: 'felipecostadev99' },
+    { nome: 'Júlia Melo Carneiro', email: 'julia.melo@cesar.school', senha: 'juliamelo#segura' },
+    { nome: 'Rafael Bento Nunes', email: 'rafael.bento@cesar.school', senha: 'rafaelnunes!321' },
+    { nome: 'Camila Duarte Rezende', email: 'camila.duarte@cesar.school', senha: 'camilarezende77' },
+    { nome: 'Diego Meneses Rocha', email: 'diego.meneses@cesar.school', senha: 'diego#rocha2025' },
+    { nome: 'Isabela Teixeira Moura', email: 'isabela.teixeira@cesar.school', senha: 'isabelamoura!42' },
+  ];
+
   try 
   {
-    const senha1 = await bcrypt.hash('anonovo1234abcd', 10);
-    const usuario1 = await prisma.user.upsert({
-      where: { email: 'lucas.paguetti@cesar.school' },
-      update: {},
-      create: 
-      {
-        name: 'Lucas Paguetti Pereira',
-        email: 'lucas.paguetti@cesar.school',
-        password: `${senha1}`,
-      },
-    });
-    console.log(`Usuário 1: ${usuario1.name}, \n Email: ${usuario1.email}`);
+    for (const usuario of usuarios) 
+    {
+      const senhaCriptografada = await bcrypt.hash(usuario.senha, 10);
+      
+      const result = await prismaCriar.user.upsert({
+        where: { email: usuario.email },
+        update: {},
+        create: 
+        {
+          name: usuario.nome,
+          email: usuario.email,
+          password: `${senhaCriptografada.toWellFormed()}`,
+        },
+      });
 
-    const senha2 = await bcrypt.hash('testedesenhadocker', 10);
-    const usuario2 = await prisma.user.upsert({
-      where: { email: 'ana.clara@cesar.school' },
-      update: {},
-      create: 
-      {
-        name: 'Ana Clara Souza',
-        email: 'ana.clara@cesar.school',
-        password: `${senha2}`,
-      },
-    });
+      console.log(`Usuário processado: ${result.name} (${result.email})`);
+    }
+  } 
+  
+  catch (error) 
+  {
+    console.error(`Erro ao processar usuários: ${error}`);
+  } 
 
-    console.log(`Usuário 2: ${usuario2.name}, \n Email: ${usuario2.email}`);
-  } catch (error) 
+  finally 
   {
-    console.error(error);
-    
-  } finally 
-  {
-    await prisma.$disconnect();
+    await prismaCriar.$disconnect();
   }
 }
 
@@ -575,7 +592,6 @@ SwaggerOnline();
  
 
 <h2 align="center"><img src="./img/SwaggerOnline.jpeg" width="440"></h2>
-
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=for-the-badge&logo=opensource&logoColor=white"/>
   <img src="https://img.shields.io/badge/Made%20with-TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=blue"/>

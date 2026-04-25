@@ -1,45 +1,52 @@
 import * as bcrypt from 'bcrypt';
 import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient();
+const prismaCriar = new PrismaClient();
 
 async function principal() 
 {
+  const usuarios = [
+    { nome: 'Lucas Paguetti Pereira', email: 'lucas.paguetti@cesar.school', senha: 'anonovo1234abcd' },
+    { nome: 'Ana Clara Souza', email: 'ana.clara@cesar.school', senha: 'testedesenhadocker' },
+    { nome: 'Bruno Torres Leão', email: 'bruno_torres.leao@cesar.school', senha: 'senhagenericateste' },
+    { nome: 'Mariana Figueiredo Luz', email: 'mariana.figueiredo@cesar.school', senha: 'mariana@pass2024' },
+    { nome: 'Felipe Andrade Costa', email: 'felipe.andrade@cesar.school', senha: 'felipecostadev99' },
+    { nome: 'Júlia Melo Carneiro', email: 'julia.melo@cesar.school', senha: 'juliamelo#segura' },
+    { nome: 'Rafael Bento Nunes', email: 'rafael.bento@cesar.school', senha: 'rafaelnunes!321' },
+    { nome: 'Camila Duarte Rezende', email: 'camila.duarte@cesar.school', senha: 'camilarezende77' },
+    { nome: 'Diego Meneses Rocha', email: 'diego.meneses@cesar.school', senha: 'diego#rocha2025' },
+    { nome: 'Isabela Teixeira Moura', email: 'isabela.teixeira@cesar.school', senha: 'isabelamoura!42' },
+  ];
+
   try 
   {
-    const senha1 = await bcrypt.hash('anonovo1234abcd', 10);
-    const usuario1 = await prisma.user.upsert({
-      where: { email: 'lucas.paguetti@cesar.school' },
-      update: {},
-      create: 
-      {
-        name: 'Lucas Paguetti Pereira',
-        email: 'lucas.paguetti@cesar.school',
-        password: `${senha1}`,
-      },
-    });
-    console.log(`Usuário 1: ${usuario1.name}, \n Email: ${usuario1.email}`);
+    for (const usuario of usuarios) 
+    {
+      const senhaCriptografada = await bcrypt.hash(usuario.senha, 10);
+      
+      const result = await prismaCriar.user.upsert({
+        where: { email: usuario.email },
+        update: {},
+        create: 
+        {
+          name: usuario.nome,
+          email: usuario.email,
+          password: `${senhaCriptografada.toWellFormed()}`,
+        },
+      });
 
-    const senha2 = await bcrypt.hash('testedesenhadocker', 10);
-    const usuario2 = await prisma.user.upsert({
-      where: { email: 'ana.clara@cesar.school' },
-      update: {},
-      create: 
-      {
-        name: 'Ana Clara Souza',
-        email: 'ana.clara@cesar.school',
-        password: `${senha2}`,
-      },
-    });
+      console.log(`Usuário processado: ${result.name} (${result.email})`);
+    }
+  } 
+  
+  catch (error) 
+  {
+    console.error(`Erro ao processar usuários: ${error}`);
+  } 
 
-    console.log(`Usuário 2: ${usuario2.name}, \n Email: ${usuario2.email}`);
-  } catch (error) 
+  finally 
   {
-    console.error(error);
-    
-  } finally 
-  {
-    await prisma.$disconnect();
+    await prismaCriar.$disconnect();
   }
 }
 
