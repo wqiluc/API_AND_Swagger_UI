@@ -39,7 +39,8 @@
   <img src="https://img.shields.io/badge/Prisma-111827?style=flat-square&logo=prisma&logoColor=green"/><br>
   <img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
   <img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/><br>
+  <img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/>
+  <img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green"/><br>
   <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3"/>
   <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E"/>
   <img src="https://img.shields.io/badge/bcrypt-111827?style=flat-square&logo=letsencrypt&logoColor=white"/>
@@ -87,7 +88,7 @@ API_AND_Swagger_UI/
 │   ├── .prettierrc <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" height="18"/>
 │   ├── docker-compose.yml <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
 │   ├── dockerfile <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
-│   ├── openapi.yml <img src="https://img.shields.io/badge/-Swagger-111827?style=flat&logo=swagger&logoColor=85EA2D" height="18"/>
+│   ├── openapi.yml <img src="https://img.shields.io/badge/-Swagger-111827?style=flat&logo=swagger&logoColor=85EA2D" height="18"/><img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green" height="18"/>
 |   ├── tsconfig.json <img src="https://img.shields.io/badge/TypeScript-Config-111827?style=flat&logo=typescript&logoColor=3178C6" alt="TypeScript Config" height="18"/>
 |   ├── tsconfig.build.json <img src="https://img.shields.io/badge/TypeScript-Build-111827?style=flat&logo=typescript&logoColor=3178C6" alt="TypeScript Build" height="18"/>
 ├── .dockerignore <img src="https://img.shields.io/badge/-DockerIgnore-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
@@ -144,7 +145,9 @@ Camada de **lógica de negócio**. Processa os dados recebidos do Controller, ap
 
 <h2 align="center">🕹️ Comandos</h2>
  
-Clone o repositório via GitHub Desktop ou terminal:
+<p align="left">Clone o repositório via GitHub Desktop ou terminal: <br>
+ <img src="https://img.shields.io/badge/-GitHubDesktop-111827?style=flat-square&logo=github&logoColor=purple"/>
+</p>
  
 ```bash
 git clone https://github.com/wqiluc/API_AND_Swagger_UI
@@ -423,7 +426,7 @@ return this.prisma.user.update({ where: { id }, data: dto });
 
 const padrãoSenha = await bcrypt.compare(dto.password, user.password); // user.password já está criptografado
 
-if (!passwordMatch)
+if (!padrãoSenha)
   throw new UnauthorizedException("Credenciais de Usuário Inválidas.");
 
 const payload = { sub: user.id, email: user.email };
