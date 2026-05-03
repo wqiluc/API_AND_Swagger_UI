@@ -519,7 +519,7 @@ async function principal()
 principal();
 ```
  
-<h2 align="center">Prisma Studio e Insomnia na Prática <br>
+<h2 align="center">Prisma Studio na Prática <br>
 <img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white"/>
 </h2>
  
