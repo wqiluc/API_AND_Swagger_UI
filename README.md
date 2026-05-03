@@ -91,6 +91,7 @@ API_AND_Swagger_UI/
 │   │   └── app.controller.ts <img src="https://img.shields.io/badge/-Controller-111827?style=flat&logo=typescript&logoColor=F7DF1E" height="18"/>
 │   │   └── app.module.ts <img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
 │   ├── .eslintrc.ts <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3" height="18"/>
+│   ├── .prettierignore <img src="https://img.shields.io/badge/PrettierIgnore-111827?style=flat-square&logo=prettier&logoColor=F7B93E" height="18"/>
 │   ├── .prettierrc <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" height="18"/>
 │   ├── docker-compose.yml <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
 │   ├── dockerfile <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
@@ -138,8 +139,10 @@ Camada de **lógica de negócio**. Processa os dados recebidos do Controller, ap
 <h2 align="center">🔑 Versões Necessárias para Compilar:</h2>
 <p align="center">
   <img src="https://img.shields.io/badge/NestJS-10.0.0-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TypeScript-5.0.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-5.0.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/> <br>
   <img src="https://img.shields.io/badge/Swagger-11.4.1-85EA2D?style=for-the-badge&logo=swagger&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Postman-11.2.0-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Insomnia-9.3.0-5849BD?style=for-the-badge&logo=insomnia&logoColor=white"/> <br>
   <img src="https://img.shields.io/badge/Passport-0.7.0-34495E?style=for-the-badge&logo=passport&logoColor=white"/>
   <img src="https://img.shields.io/badge/JWT-10.2.0-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
   <img src="https://img.shields.io/badge/RxJS-7.8.0-B7178C?style=for-the-badge&logo=reactivex&logoColor=white"/>
@@ -266,12 +269,6 @@ docker-compose exec api npx prisma validate
  
 # Introspecta o banco existente
 docker-compose exec api npx prisma introspect
- 
-# ✅ Novos no Prisma v7
-npx prisma dev                         # Inicia o servidor Prisma Postgres local
-npx prisma platform login              # Autentica na Prisma Platform
-npx prisma platform project create    # Cria projeto na Prisma Platform
-npx prisma platform env create        # Cria variáveis de ambiente na Platform
 ```
  
 ---
@@ -360,7 +357,6 @@ docker compose exec api npm install @nestjs/common @nestjs/core @nestjs/platform
 docker compose exec api npm install -D prisma @types/passport-jwt @types/bcrypt @types/node \
   @nestjs/cli @nestjs/schematics typescript ts-node
 ```
- 
  
 <h2 align="center">6. GitIgnore<br>
 <img src="https://img.shields.io/badge/-Git-111827?style=flat-square&logo=git&logoColor=F05032"/>
@@ -535,7 +531,7 @@ Acesse a tabela `User` → coluna `password`. O valor armazenado será semelhant
 </p>
  
 <h2 align="center"> Swagger UI, Insomnia e Postman na Prática <br>
-<img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/> <img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green"/><img src="https://img.shields.io/badge/Insomnia-111827?style=flat-square&logo=insomnia&logoColor=4000BF"/><img src="https://img.shields.io/badge/-Postman-111827?style=flat-square&logo=postman&logoColor=FF6C37"/>
+<img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green"/><img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/><img src="https://img.shields.io/badge/Insomnia-111827?style=flat-square&logo=insomnia&logoColor=4000BF"/><img src="https://img.shields.io/badge/-Postman-111827?style=flat-square&logo=postman&logoColor=FF6C37"/>
 </h2>
 
 - 1. Swagger <br>
@@ -547,7 +543,7 @@ npm run start:dev
 ```
 
 ```
-http://localhost:3000/api
+http://localhost:3000
 ```
  
 O Swagger é configurado em `main.ts` via `@nestjs/swagger` e documentado com decorators nos controllers (`@ApiOperation`, `@ApiResponse`, `@ApiBody`, `@ApiBearerAuth`). O arquivo `openapi.yml` na raiz do projeto contém a especificação completa da API no formato OpenAPI 3.0.
@@ -582,15 +578,15 @@ async function SwaggerOnline()
 {
   const app = await NestFactory.create(AppModule);
 
-  const config = new DocumentBuilder()
+  const configurcao = new DocumentBuilder()
     .setTitle('API de Autenticação do TS Node.js')
     .setDescription('Estudo de autenticação com JWT e Bcrypt no NODE.js')
     .setVersion('1.1.0')
     .addBearerAuth()
     .build();
 
-  const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  const documento = SwaggerModule.createDocument(app, configuracao);
+  SwaggerModule.setup('api', app, documento);
 
   await app.listen(process.env.PORT ?? 3000);
 }
@@ -658,10 +654,12 @@ request:
 ```
 
 <h2 align="center"><img src="./img/postman.jpeg" width="440"></h2>
-<p align="center">
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=for-the-badge&logo=opensource&logoColor=white"/>
   <img src="https://img.shields.io/badge/Made%20with-TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=blue"/>
-  <img src="https://img.shields.io/badge/Powered%20by-NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=red"/>
+  <img src="https://img.shields.io/badge/Powered%20by-NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=red"/> <br>
+  <img src="https://img.shields.io/badge/Swagger-API-85EA2D?style=for-the-badge&logo=swagger&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Postman-Client-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Insomnia-Client-5849BD?style=for-the-badge&logo=insomnia&logoColor=white"/>
 </p>

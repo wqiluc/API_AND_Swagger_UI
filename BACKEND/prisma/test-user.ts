@@ -5,7 +5,8 @@ const prismaCriar = new PrismaClient();
 
 async function principal() 
 {
-  const usuarios = [
+  const usuarios = 
+  [
     { nome: 'Lucas Paguetti Pereira', email: 'lucas.paguetti@cesar.school', senha: 'anonovo1234abcd' },
     { nome: 'Ana Clara Souza', email: 'ana.clara@cesar.school', senha: 'testedesenhadocker' },
     { nome: 'Bruno Torres Leão', email: 'bruno_torres.leao@cesar.school', senha: 'senhagenericateste' },
@@ -18,6 +19,7 @@ async function principal()
     { nome: 'Isabela Teixeira Moura', email: 'isabela.teixeira@cesar.school', senha: 'isabelamoura!42' },
   ];
 
+  
   try 
   {
     for (const usuario of usuarios) 

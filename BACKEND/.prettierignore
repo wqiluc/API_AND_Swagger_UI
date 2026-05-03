@@ -1,0 +1,31 @@
+# Ignorar pastas de dependências e build
+node_modules/
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Ignorar arquivos de ambiente e lockfiles
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.lock
+
+# Ignorar arquivos de logs e relatórios
+coverage/
+.cache/
+.turbo/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Ignorar arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db

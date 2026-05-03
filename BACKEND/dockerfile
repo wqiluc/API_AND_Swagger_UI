@@ -8,11 +8,11 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install --legacy-peer-deps
 
-# !!! COPIE O CÓDIGO PRIMEIRO !!!
+# !!! COPIA O CÓDIGO PRIMEIRO !!!
 # Isso coloca o prisma/schema.prisma dentro do container
 COPY . .
 
-# !!! GERE O CLIENTE DEPOIS !!!
+# !!! GERA O CLIENTE DEPOIS !!!
 # Agora ele vai encontrar o arquivo schema.prisma
 RUN npx prisma generate
 
