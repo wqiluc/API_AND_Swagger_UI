@@ -40,7 +40,9 @@
   <img src="https://img.shields.io/badge/-Docker-111827?style=flat-square&logo=docker&logoColor=2496ed"/>
   <img src="https://img.shields.io/badge/-PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/>
-  <img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green"/><br>
+  <img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green"/>
+  <img src="https://img.shields.io/badge/Insomnia-111827?style=flat-square&logo=insomnia&logoColor=purple"/>
+  <img src="https://img.shields.io/badge/-Postman-111827?style=flat-square&logo=postman&logoColor=FF6C37"/><br>
   <img src="https://img.shields.io/badge/ESLint-111827?style=flat-square&logo=eslint&logoColor=4B32C3"/>
   <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E"/>
   <img src="https://img.shields.io/badge/bcrypt-111827?style=flat-square&logo=letsencrypt&logoColor=white"/>
@@ -57,6 +59,10 @@
 <pre>
 API_AND_Swagger_UI/
 ├── BACKEND <img src="https://img.shields.io/badge/-TypeScript-111827?style=flat&logo=typescript&logoColor=3178C6" height="18"/><img src="https://img.shields.io/badge/-NestJS-111827?style=flat&logo=nestjs&logoColor=E0234E" height="18"/><img src="https://img.shields.io/badge/-Node.js-111827?style=flat&logo=nodedotjs&logoColor=339933" height="18"/>/
+│   ├── postman <img src="https://img.shields.io/badge/-Postman-111827?style=flat-square&logo=postman&logoColor=FF6C37" height="18"/>/
+│   │   └── collections <img src="https://img.shields.io/badge/Collections-111827?style=flat-square&logo=postman&logoColor=white" height="18"/>/
+│   │       ├── Login.request.yaml <img src="https://img.shields.io/badge/-YAML-111827?style=flat-square&logo=yaml&logoColor=CB171E" height="18"/>
+│   │       └── Profile.request.yaml <img src="https://img.shields.io/badge/-YAML-111827?style=flat-square&logo=yaml&logoColor=CB171E" height="18"/>
 │   ├── prisma <img src="https://img.shields.io/badge/Prisma-111827?style=flat&logo=prisma&logoColor=green" height="18"/>/
 │   │   ├── prisma.module.ts <img src="https://img.shields.io/badge/-Module-111827?style=flat&logo=typescript&logoColor=E0234E" height="18"/>
 │   │   ├── prisma.service.ts <img src="https://img.shields.io/badge/-Service-111827?style=flat&logo=typescript&logoColor=3B82F6" height="18"/>
@@ -88,7 +94,7 @@ API_AND_Swagger_UI/
 │   ├── .prettierrc <img src="https://img.shields.io/badge/Prettier-111827?style=flat-square&logo=prettier&logoColor=F7B93E" height="18"/>
 │   ├── docker-compose.yml <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
 │   ├── dockerfile <img src="https://img.shields.io/badge/-Docker-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
-│   ├── openapi.yml <img src="https://img.shields.io/badge/-Swagger-111827?style=flat&logo=swagger&logoColor=85EA2D" height="18"/><img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green" height="18"/>
+│   ├── openapi.yml <img src="https://img.shields.io/badge/-Swagger-111827?style=flat&logo=swagger&logoColor=85EA2D" height="18"/><img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green" height="18"/><img src="https://img.shields.io/badge/Insomnia-111827?style=flat-square&logo=insomnia&logoColor=purple" height="18"/><img src="https://img.shields.io/badge/-Postman-111827?style=flat-square&logo=postman&logoColor=FF6C37" height="18"/>
 |   ├── tsconfig.json <img src="https://img.shields.io/badge/TypeScript-Config-111827?style=flat&logo=typescript&logoColor=3178C6" alt="TypeScript Config" height="18"/>
 |   ├── tsconfig.build.json <img src="https://img.shields.io/badge/TypeScript-Build-111827?style=flat&logo=typescript&logoColor=3178C6" alt="TypeScript Build" height="18"/>
 ├── .dockerignore <img src="https://img.shields.io/badge/-DockerIgnore-111827?style=flat&logo=docker&logoColor=2496ed" height="18"/>
@@ -513,7 +519,7 @@ async function principal()
 principal();
 ```
  
-<h2 align="center">Prisma Studio na Prática <br>
+<h2 align="center">Prisma Studio e Insomnia na Prática <br>
 <img src="https://img.shields.io/badge/Prisma_Studio-4ade80?style=flat-square&logo=prisma&logoColor=white"/>
 </h2>
  
@@ -528,18 +534,17 @@ Acesse a tabela `User` → coluna `password`. O valor armazenado será semelhant
   <img src="./img/PrismaStudio2.jpeg" width="440"/>
 </p>
  
-<h2 align="center"> Swagger UI na Prática <br>
-<img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/>
-<img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green"/>
+<h2 align="center"> Swagger UI, Insomnia e Postman na Prática <br>
+<img src="https://img.shields.io/badge/-Swagger-111827?style=flat-square&logo=swagger&logoColor=85EA2D"/> <img src="https://img.shields.io/badge/openapi.yml-111827?style=flat-square&logo=openapiinitiative&logoColor=green"/><img src="https://img.shields.io/badge/Insomnia-111827?style=flat-square&logo=insomnia&logoColor=4000BF"/><img src="https://img.shields.io/badge/-Postman-111827?style=flat-square&logo=postman&logoColor=FF6C37"/>
 </h2>
- 
+
+- 1. Swagger <br>
 Com o servidor rodando, acesse a documentação interativa da API pelo navegador:
  
 ```bash
 #após rodar na PASTA BACKEND/ :
 npm run start:dev
 ```
-
 
 ```
 http://localhost:3000/api
@@ -595,6 +600,66 @@ SwaggerOnline();
  
 
 <h2 align="center"><img src="./img/SwaggerOnline.jpeg" width="440"></h2>
+<p align="center">
+
+- 2. Insomnia
+
+Ao instalar o App, importe o arquivo: 
+
+`API_AND_SWAGGER_UI/BACKEND/openapi.yml`
+
+<h2 align="center"><img src="./img/insomnia.jpeg" width="440"></h2>
+
+- 3. Postman
+
+`BACKEND/postman/collections/Login.request.yaml`
+```yml
+$kind: http-request
+version: '3.0'
+name: 'Login'
+request:
+  url: 'http://localhost:3000/auth/login'
+  method: POST
+  headers:
+    - name: 'Content-Type'
+      value: 'application/json'
+  body:
+    mode: raw
+    raw: |-
+      {
+        "email": "lucas.teste@example.com",
+        "password": "${senhaCriptografada}"
+      }
+response:
+  scripts:
+    post-response:
+      - type: text/typescript
+        exec:
+          - |
+            const json = pm.response.json();
+            if (json.access_token) 
+            {
+              pm.environment.set('token', json.access_token);
+            }
+```
+
+`BACKEND/postman/collections/Profile.request.yaml`
+```yml
+$kind: http-request
+version: '3.0'
+name: 'Profile'
+request:
+  url: 'http://localhost:3000/auth/profile'
+  method: GET
+  headers:
+    - name: 'Authorization'
+      value: 'Bearer {{token}}'
+
+```
+
+<h2 align="center"><img src="./img/postman.jpeg" width="440"></h2>
+<p align="center">
+
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=for-the-badge&logo=opensource&logoColor=white"/>
   <img src="https://img.shields.io/badge/Made%20with-TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=blue"/>

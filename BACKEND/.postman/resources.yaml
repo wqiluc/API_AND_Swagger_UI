@@ -1,0 +1,6 @@
+
+workspace:
+  id: e4ef658d-a00c-4c9c-84ca-814ab1939d7e
+localResources:
+  specs:
+    - ../openapi.yml

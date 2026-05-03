@@ -1,0 +1,17 @@
+$kind: http-request
+version: '3.0'
+name: 'Register'
+request:
+  url: 'http://localhost:3000/auth/register'
+  method: POST
+  headers:
+    - name: 'Content-Type'
+      value: 'application/json'
+  body:
+    mode: raw
+    raw: |-
+      {
+        "name": "Lucas Teste",
+        "email": "lucas.teste@example.com",
+        "password": ""
+      }

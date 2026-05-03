@@ -1,0 +1,9 @@
+$kind: http-request
+version: '3.0'
+name: 'Profile'
+request:
+  url: 'http://localhost:3000/auth/profile'
+  method: GET
+  headers:
+    - name: 'Authorization'
+      value: 'Bearer {{token}}'
